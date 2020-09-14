@@ -26,20 +26,42 @@
   }
   &__logo {
     margin-right: 90px;
-    img {
-      width: 100%;
+    @media (max-width: 1240px) {
+      margin-right: 50px;
+    }
+    @media (max-width: 1060px) {
+      margin-right: 0;
     }
   }
   &__links {
     display: flex;
     align-items: center;
+    @media (max-width: 1060px) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  &__burger {
+    display: none;
+    @media (max-width: 1060px) {
+      display: block;
+    }
   }
   &__buttons {
     width: 100%;
     max-width: 350px;
     display: flex;
+    @media (max-width: 1240px) {
+      max-width: 240px;
+    }
+    @media (max-width: 1060px) {
+      display: none;
+    }
     a {
       margin-right: 50px;
+      @media (max-width: 1240px) {
+        margin-right: 25px;
+      }
     }
     a:last-child {
       margin-right: 0;
@@ -48,13 +70,33 @@
   ul {
     display: flex;
     align-items: center;
+    @media (max-width: 1060px) {
+      display: none;
+    }
     li:last-child {
       padding-right: 0;
     }
     li {
+      z-index: 9;
+      position: relative;
       display: flex;
       align-items: center;
       padding-right: 36px;
+      &:before {
+        z-index: -12;
+        transition: 0.3s;
+        opacity: 0;
+        content: url("images/icons/oval-border-small.svg");
+        position: absolute;
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+      @media (max-width: 1240px) {
+        padding-right: 15px;
+      }
       a {
         color: #4a3c3a;
         @include roman;

@@ -1,10 +1,23 @@
 .logos {
-  margin-top: 100px;
+  margin-top: 140px;
   margin-bottom: 100px;
   &__info {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      max-width: 276px;
+      height: 276px;
+      border-radius: 50%;
+      background-color: #fcf1eb;
+      opacity: 0.4;
+      left: 80px;
+      z-index: -12;
+    }
   }
   img {
     margin-right: 35px;
