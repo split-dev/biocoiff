@@ -9,10 +9,21 @@
     position: absolute;
     top: 130px;
     right: 0;
+    img {
+      box-shadow: 15px 15px 5px 0  #f3f9fa;
+    }
   }
   &__text {
+    z-index: 9;
     margin-top: 280px;
     margin-right: 230px;
+    &:after {
+      content: url("images/icons/oval-big-blue.svg");
+      position: absolute;
+      right: 0;
+      top: 373px;
+      z-index: -12;
+    }
   }
   &__logo {
     display: flex;
@@ -32,22 +43,21 @@
     margin-bottom: 50px;
   }
   h3 {
+    position: relative;
     z-index: 9;
     max-width: 399px;
     padding-bottom: 30px;
     &:before {
       z-index: -12;
-      content: "";
+      content: url("images/icons/oval-green.svg");
       position: absolute;
-      right: 590px;
-      top: 394px;
       width: 100%;
       max-width: 120px;
       height: 120px;
       border-radius: 50%;
-      background-color: #eff8ed;
-      border: 1px solid #4a3c3a;
-      opacity: 0.55;
+      border: 1px solid rgba(25, 20, 19, 0.41);
+      top: -60px;
+      right: 350px;
     }
   }
   h1 {

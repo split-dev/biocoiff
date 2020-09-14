@@ -1,0 +1,15 @@
+.logos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    margin-right: 35px;
+  }
+  img:last-child {
+    margin-right: 0;
+  }
+}
