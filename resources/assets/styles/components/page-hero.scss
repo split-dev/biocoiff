@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 155px;
   margin-bottom: 80px;
-  overflow-x: hidden;
+  overflow-y: hidden;
   &__content {
     display: flex;
     justify-content: space-between;
@@ -65,6 +65,9 @@
       }
       @media (max-width: 575px) {
         margin-left: -55px;
+      }
+      @media (max-width: 450px) {
+        margin-left: -98px;
       }
     }
   }
