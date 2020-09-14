@@ -1,6 +1,10 @@
 import Headroom from 'headroom.js'
+import AOS from 'aos'
 export default {
   init() {
+    AOS.init({
+      duration: 1200,
+    })
     var headroom  = new Headroom(document.querySelector('nav'));
     headroom.init();
     $('.nav__burger').click(function() {
