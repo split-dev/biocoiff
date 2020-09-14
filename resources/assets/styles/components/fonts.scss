@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Lucida Grande";
+  src:
+    url("../fonts/LucidaGrande.eot"),
+    url("../fonts/LucidaGrande.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/LucidaGrande.woff2") format("woff2"),
+    url("../fonts/LucidaGrande.woff") format("woff"),
+    url("../fonts/LucidaGrande.ttf") format("truetype"),
+    url("../fonts/LucidaGrande.svg#LucidaGrande") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src:
+    local("Neue Haas Grotesk Display Pro 35 Thin"),
+    local("NeueHaasDisplay-Thin"),
+    url("../fonts/NeueHaasDisplay-Thin.eot"),
+    url("../fonts/NeueHaasDisplay-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NeueHaasDisplay-Thin.woff2") format("woff2"),
+    url("../fonts/NeueHaasDisplay-Thin.woff") format("woff"),
+    url("../fonts/NeueHaasDisplay-Thin.ttf") format("truetype"),
+    url("../fonts/NeueHaasDisplay-Thin.svg#NeueHaasDisplay-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src:
+    local("Neue Haas Grotesk Display Pro 55 Roman"),
+    local("NeueHaasDisplay-Roman"),
+    url("../fonts/NeueHaasDisplay-Roman.eot"),
+    url("../fonts/NeueHaasDisplay-Roman.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NeueHaasDisplay-Roman.woff2") format("woff2"),
+    url("../fonts/NeueHaasDisplay-Roman.woff") format("woff"),
+    url("../fonts/NeueHaasDisplay-Roman.ttf") format("truetype"),
+    url("../fonts/NeueHaasDisplay-Roman.svg#NeueHaasDisplay-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haigrast Serif";
+  src:
+    url("../fonts/HaigrastSerif-Regular.eot"),
+    url("../fonts/HaigrastSerif-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HaigrastSerif-Regular.woff2") format("woff2"),
+    url("../fonts/HaigrastSerif-Regular.woff") format("woff"),
+    url("../fonts/HaigrastSerif-Regular.ttf") format("truetype"),
+    url("../fonts/HaigrastSerif-Regular.svg#HaigrastSerif-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

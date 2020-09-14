@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Haigrast Serif';
+    src: url('HaigrastSerif-Regular.eot');
+    src: url('HaigrastSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('HaigrastSerif-Regular.woff2') format('woff2'),
+        url('HaigrastSerif-Regular.woff') format('woff'),
+        url('HaigrastSerif-Regular.ttf') format('truetype'),
+        url('HaigrastSerif-Regular.svg#HaigrastSerif-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

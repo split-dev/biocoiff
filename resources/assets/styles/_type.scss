@@ -6,3 +6,39 @@
  * such as `.text-hero`, which can be `@extend`-ed from other scss files
  * This way, this file become a master list of typography used throughout the site
  */
+h1 {
+  color: #4a3c3a;
+  @include h-reg;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 80px;
+}
+h2 {
+  color: #4a3c3a;
+  @include h-reg;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+h3 {
+  color: #4a3c3a;
+  @include h-reg;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+p {
+  color: #101318;
+  @include thin;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+}
+a {
+  transition: 0.3s;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+}
