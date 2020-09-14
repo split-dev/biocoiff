@@ -8,6 +8,8 @@ export default {
     var headroom  = new Headroom(document.querySelector('nav'));
     headroom.init();
     $('.nav__burger').click(function() {
+      $('.nav').css('position', 'relative')
+      $('.nav').css('z-index', '1')
       $('.mobile-menu').toggleClass('open-mobile');
       $('.shadow').toggleClass('show-shadow');
       $('body').toggleClass('body-hidden');
@@ -16,6 +18,8 @@ export default {
       var div = $('.open-mobile'); // тут указываем ID элемента
       if (!div.is(e.target) // если клик был не по нашему блоку
         && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $('.nav').css('position', 'fixed')
+        $('.nav').css('z-index', '9999')
         $('.mobile-menu').removeClass('open-mobile');
         $('.shadow').removeClass('show-shadow');
         $('body').removeClass('body-hidden');
