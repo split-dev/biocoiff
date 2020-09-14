@@ -46,7 +46,6 @@
     padding-top: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
   }
   &__buttons {
@@ -56,15 +55,32 @@
     margin-bottom: 40px;
     a {
       margin-bottom: 20px;
-      img {
-        margin-right: 15px;
+    }
+    a:nth-child(2) {
+      &:before {
+        content: url("images/icons/user-small.svg");
+        position: absolute;
+        left: 17px;
       }
     }
+    a:nth-child(3) {
+      &:before {
+        position: absolute;
+        left: 17px;
+        content: url("images/icons/basket-small.svg");
+      }
+    }
+  }
+  &__burger {
+    margin-left: 17px;
+  }
+  &__logo {
+    margin: auto;
   }
   &__accord {
     width: 100%;
     margin-top: 60px;
-    margin-left: 50px;
+    margin-left: 80px;
     li {
       margin-bottom: 20px;
     }
