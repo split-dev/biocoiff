@@ -28,3 +28,26 @@
     }
   }
 }
+.btn-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #4a3c3a;
+  @include roman;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 150px;
+  height: 32px;
+  border: 1px solid rgba(25, 20, 19, 0.41);
+  transition: 0.3s;
+  z-index: 9;
+  &:hover {
+    color: #4a3c3a;
+    border: 1px solid #4a3c3a;
+    &:before {
+      opacity: 1;
+    }
+  }
+}

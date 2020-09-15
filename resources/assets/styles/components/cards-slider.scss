@@ -1,0 +1,217 @@
+.card-detail {
+  margin-top: 90px;
+  .img-big {
+    width: 130% !important;
+    margin-top: 7px;
+  }
+  .cards__bottom-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    a {
+      margin-right: 10px;
+    }
+    h3 {
+      color: #4a3c3a;
+      @include h-reg;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-bottom: 35px;
+      max-width: 320px;
+    }
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  &__hide {
+    @media (max-width: 575px) {
+      display: none;
+    }
+    &__device {
+      display: none;
+      @media (max-width: 575px) {
+        display: block;
+      }
+    }
+  }
+  h2 {
+    width: 100%;
+    max-width: 495px;
+    padding-bottom: 95px;
+    @media (max-width: 575px) {
+      padding-bottom: 40px;
+    }
+  }
+  &__say {
+    position: absolute;
+    top: 43px;
+    right: 263px;
+    span {
+      color: #a49d9c;
+      font-size: 160px;
+      font-weight: 400;
+      @include luc-grande;
+    }
+  }
+  &__img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 575px) {
+      max-width: 100%;
+      height: 266px;
+    }
+    @media (max-width: 400px) {
+      height: 200px;
+    }
+  }
+  &__bottom {
+    padding-top: 24px;
+    @media (max-width: 767px) {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    @media (max-width: 575px) {
+      padding-top: 12px;
+      padding-bottom: 30px;
+    }
+    h5 {
+      color: #150a2c;
+      @include h-reg;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      @media (max-width: 575px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .cards-line {
+    margin-top: 40px;
+    max-width: 160px;
+    height: 1px;
+    background-color: #a59e9d;
+  }
+  &__text {
+    padding-left: 40px;
+    width: 100%;
+    max-width: 900px;
+    @media (max-width: 767px) {
+      padding-left: 15px;
+    }
+    @media (max-width: 575px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      max-width: 256px;
+      padding-top: 90px;
+      width: 100%;
+      color: #101318;
+      @include thin;
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 24px;
+      @media (max-width: 575px) {
+        max-width: 296px;
+        padding-top: 75px;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1018px) {
+      flex-direction: column;
+    }
+    @media (max-width: 575px) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__card {
+    display: flex;
+    justify-content: space-around;
+    height: 420px;
+    @media (max-width: 767px) {
+      height: 100%;
+    }
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__right {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.4s;
+    max-width: 426px;
+    @media (max-width: 1118px) {
+      flex-direction: column;
+      margin-top: 30px;
+      width: 100%;
+    }
+    @media (max-width: 575px) {
+      display: none;
+    }
+    &-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &-bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .card-detail__small-img {
+      position: relative;
+      transition: 0.4s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      max-width: 180px;
+      z-index: 9;
+      @media (max-width: 1199px) {
+        max-width: 155px;
+      }
+      @media (max-width: 1118px) {
+        max-width: 180px;
+      }
+      &:before {
+        opacity: 0;
+        content: url("images/icons/oval-border.svg");
+        position: absolute;
+        transition: 0.4s;
+        top: -77px;
+        right: 12px;
+      }
+      img {
+        transition: 0.4s;
+        width: 100%;
+      }
+      &:hover {
+        cursor: pointer;
+        &:before {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

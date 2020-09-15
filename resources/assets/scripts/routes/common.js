@@ -1,21 +1,41 @@
 import Headroom from 'headroom.js'
 import AOS from 'aos'
 import '../components/spincrement'
-
+//eslint-disable-next-line no-unused-vars
+import Swiper from 'swiper/swiper-bundle';
 export default {
   init() {
     AOS.init({
       duration: 1200,
     })
+
+    //eslint-disable-next-line no-unused-vars
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'fade',
+    });
+    $('.card-detail__small-img').click (function () {
+      let index = $(this).attr('data-id');
+      swiper.slideTo ( index );
+    });
     $('.spincrement').spincrement({
       // fade: false,
       duration: 4000,
       thousandSeparator: '',
     });
+    // eslint-disable-next-line no-unused-vars
+   /* var myFullpage = new fullpage('#fullpage', {
+      anchors: ['Home', 'About', 'Services', 'Estimate', 'Process', 'Portfolio', 'Trusted', 'Contact'],
+      verticalCentered: false,
+      navigation: false,
+      menu: '.menu-full',
+      scrollingSpeed: 1000,
+      scrollOverflow: true,
+      lockAnchors: false,
+      normalScrollElements: '.scrollable-content',
+    })*/
     var headroom  = new Headroom(document.querySelector('nav'));
     headroom.init();
     $('.nav__burger').click(function() {
-      $('.nav').css('position', 'relative')
       $('.nav').css('z-index', '1')
       $('.mobile-menu').toggleClass('open-mobile');
       $('.shadow').toggleClass('show-shadow');
