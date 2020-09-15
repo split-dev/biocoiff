@@ -1,6 +1,7 @@
 footer {
   display: flex;
   position: relative;
+  overflow: hidden;
   &:before {
     z-index: -12;
     content: url("images/icons/oval-big-green.svg");
@@ -14,11 +15,20 @@ footer {
   &__content {
     display: flex;
     width: 100%;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
   }
   &__logo {
     margin-right: 135px;
     position: relative;
     z-index: 9;
+    @media (max-width: 991px) {
+      display: block;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
   }
   &__ul-first {
     margin-right: 190px;
@@ -29,6 +39,7 @@ footer {
     justify-content: center;
     margin-top: 70px;
     span {
+      text-align: center;
       color: #4a3c3a;
       @include roman;
       font-size: 16px;
@@ -38,6 +49,12 @@ footer {
   ul {
     &:last-child {
       margin-left: 165px;
+      @media (max-width: 767px) {
+        margin-top: 30px;
+        margin-left: 0;
+        display: block;
+        width: 100%;
+      }
     }
     li {
       position: relative;

@@ -1,4 +1,6 @@
 .advantages {
+  overflow: hidden;
+  padding-bottom: 70px;
   &__top {
     display: flex;
     align-items: center;
@@ -9,6 +11,11 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 80px;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      max-width: 450px;
+      margin: 0 auto 80px auto;
+    }
   }
   &__bottom {
     position: relative;
@@ -26,6 +33,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+      margin-bottom: 67px;
+    }
     h3 {
       margin-bottom: 23px;
     }
@@ -38,6 +48,10 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 60px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
   }
   &__oval {
     display: flex;

@@ -24,6 +24,9 @@
   @media (max-width: 1005px) {
     padding: 0 40px 0 40px;
   }
+  @media (max-width: 767px) {
+    height: 75px;
+  }
   &__info {
     width: 100%;
     display: flex;
@@ -37,6 +40,12 @@
     }
     @media (max-width: 991px) {
       margin-right: 0;
+    }
+    img {
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: 120px;
+      }
     }
   }
   &__links {
