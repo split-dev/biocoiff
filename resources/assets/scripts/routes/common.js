@@ -1,10 +1,17 @@
 import Headroom from 'headroom.js'
 import AOS from 'aos'
+import '../components/spincrement'
+
 export default {
   init() {
     AOS.init({
       duration: 1200,
     })
+    $('.spincrement').spincrement({
+      // fade: false,
+      duration: 4000,
+      thousandSeparator: '',
+    });
     var headroom  = new Headroom(document.querySelector('nav'));
     headroom.init();
     $('.nav__burger').click(function() {
