@@ -3,6 +3,7 @@ import AOS from 'aos'
 import '../components/spincrement'
 //eslint-disable-next-line no-unused-vars
 import Swiper from 'swiper/swiper-bundle';
+import 'jquery-mask-plugin'
 export default {
   init() {
     AOS.init({
@@ -12,6 +13,7 @@ export default {
     var swiper = new Swiper('.swiper-container', {
       effect: 'fade',
     });
+    $('.phone').mask('0 000 000 000');
     $('.card-detail__small-img').click (function () {
       $(this).toggleClass('active');
       let index = $(this).attr('data-id');

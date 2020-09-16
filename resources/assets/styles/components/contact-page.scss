@@ -47,6 +47,27 @@
       top: 15px;
     }
   }
+  .input-group {
+    display: flex;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+      padding-right: 6px;
+      position: relative;
+      padding-left: 6px;
+      width: 100%;
+      max-width: 40px;
+      height: 40px;
+      border: 1px solid #b7b1b1;
+      border-right: 0 !important;
+      color: #101318;
+      @include thin;
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 16px;
+    }
+  }
   &__input {
     margin-bottom: 20px;
     width: 100%;
