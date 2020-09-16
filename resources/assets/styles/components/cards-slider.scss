@@ -1,5 +1,7 @@
 .card-detail {
   margin-top: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
   .img-big {
     width: 130% !important;
     margin-top: 7px;
@@ -25,6 +27,9 @@
   .swiper-container {
     width: 100%;
     height: 100%;
+    @media (max-width: 992px) {
+      order: 2;
+    }
   }
   &__hide {
     @media (max-width: 575px) {
@@ -42,13 +47,35 @@
     max-width: 495px;
     padding-bottom: 95px;
     @media (max-width: 575px) {
-      padding-bottom: 40px;
+      padding-bottom: 10px;
+      max-width: 324px;
+      text-align: center;
+      margin: auto;
     }
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
   }
   &__say {
     position: absolute;
     top: 43px;
     right: 263px;
+    @media (max-width: 1199px) {
+      top: -1px;
+      right: 170px;
+    }
+    @media (max-width: 992px) {
+      right: 300px;
+    }
+    @media (max-width: 767px) {
+      right: 189px;
+    }
+    @media (max-width: 575px) {
+      position: relative;
+      right: 0;
+      top: -60px;
+    }
     span {
       color: #a49d9c;
       font-size: 160px;
@@ -64,16 +91,19 @@
       width: 100%;
       height: 100%;
     }
-    @media (max-width: 575px) {
-      max-width: 100%;
-      height: 266px;
+    @media (max-width: 992px) {
+      max-width: 290px;
     }
-    @media (max-width: 400px) {
-      height: 200px;
+    @media (max-width: 575px) {
+      max-width: 330px;
+      height: 420px;
     }
   }
   &__bottom {
     padding-top: 24px;
+    @media (max-width: 1199px) {
+      padding-top: 17px;
+    }
     @media (max-width: 767px) {
       padding-top: 10px;
       padding-bottom: 20px;
@@ -98,6 +128,9 @@
     max-width: 160px;
     height: 1px;
     background-color: #a59e9d;
+    @media (max-width: 1199px) {
+      margin-top: 23px;
+    }
   }
   &__text {
     padding-left: 40px;
@@ -108,9 +141,9 @@
     }
     @media (max-width: 575px) {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding-left: 0;
     }
     p {
       max-width: 256px;
@@ -121,9 +154,12 @@
       font-size: 16px;
       font-weight: 100;
       line-height: 24px;
+      @media (max-width: 1199px) {
+        padding-top: 55px;
+      }
       @media (max-width: 575px) {
-        max-width: 296px;
-        padding-top: 75px;
+        max-width: 218px;
+        padding-top: 70px;
       }
     }
   }
@@ -142,6 +178,9 @@
     display: flex;
     justify-content: space-around;
     height: 420px;
+    @media (max-width: 1199px) {
+      height: 338px;
+    }
     @media (max-width: 767px) {
       height: 100%;
     }
@@ -164,8 +203,15 @@
       margin-top: 30px;
       width: 100%;
     }
+    @media (max-width: 992px) {
+      order: 1;
+      flex-direction: row;
+      max-width: 100%;
+      height: 100%;
+      margin-bottom: 30px;
+    }
     @media (max-width: 575px) {
-      display: none;
+      max-width: 335px;
     }
     &-top {
       width: 100%;
@@ -178,6 +224,16 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+    }
+    .active {
+      &:before {
+        opacity: 1;
+        content: url("images/icons/oval-border.svg");
+        position: absolute;
+        transition: 0.4s;
+        top: -77px;
+        right: 12px;
+      }
     }
     .card-detail__small-img {
       position: relative;
@@ -193,6 +249,12 @@
       }
       @media (max-width: 1118px) {
         max-width: 180px;
+      }
+      @media (max-width: 992px) {
+        max-width: 80px;
+      }
+      @media (max-width: 575px) {
+        max-width: 60px;
       }
       &:before {
         opacity: 0;

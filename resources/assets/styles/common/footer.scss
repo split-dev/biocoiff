@@ -7,23 +7,37 @@ footer {
     content: url("images/icons/oval-big-green.svg");
     position: absolute;
     left: 30px;
+    @media (max-width: 991px) {
+      left: -27px;
+      top: -37px;
+    }
+    @media (max-width: 575px) {
+      left: -168px;
+      top: -80px;
+    }
   }
 }
 .footer {
-  margin-top: 160px;
+  margin-top: 130px;
   margin-bottom: 30px;
+  @media (max-width: 991px) {
+    margin-top: 50px;
+  }
   &__content {
     display: flex;
     width: 100%;
-    @media (max-width: 991px) {
+    @media (max-width: 992px) {
       flex-wrap: wrap;
+    }
+    @media (max-width: 575px) {
+      justify-content: center;
     }
   }
   &__logo {
     margin-right: 135px;
     position: relative;
     z-index: 9;
-    @media (max-width: 991px) {
+    @media (max-width: 992px) {
       display: block;
       width: 100%;
       margin-right: 0;
@@ -32,6 +46,9 @@ footer {
   }
   &__ul-first {
     margin-right: 190px;
+    @media (max-width: 575px) {
+      margin-right: 75px;
+    }
   }
   &__bottom {
     display: flex;
@@ -54,6 +71,13 @@ footer {
         margin-left: 0;
         display: block;
         width: 100%;
+      }
+      @media (max-width: 575px) {
+        align-items: center;
+      }
+      @media (max-width: 400px) {
+        align-items: normal;
+        margin-top: 0;
       }
     }
     li {

@@ -7,6 +7,9 @@
   @media (max-width: 991px) {
     padding-top: 120px;
   }
+  @media (max-width: 767px) {
+    margin-bottom: 80px;
+  }
   &:after {
     z-index: -12;
     content: url("images/future/orange-big.svg");

@@ -14,6 +14,7 @@ export default {
       effect: 'fade',
     });
     $('.card-detail__small-img').click (function () {
+      $(this).toggleClass('active');
       let index = $(this).attr('data-id');
       swiper.slideTo ( index );
     });
