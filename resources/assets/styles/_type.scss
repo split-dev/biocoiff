@@ -12,6 +12,12 @@ h1 {
   font-size: 64px;
   font-weight: 400;
   line-height: 80px;
+  @media (max-width: 991px) {
+    font-size: 52px
+  }
+  @media (max-width: 767px) {
+    font-size: 44px
+  }
   @media (max-width: 575px) {
     font-size: 36px;
     line-height: 48px;

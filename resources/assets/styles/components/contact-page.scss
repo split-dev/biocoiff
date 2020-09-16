@@ -2,10 +2,22 @@
   display: flex;
   position: relative;
   padding-top: 150px;
+  padding-bottom: 75px;
+  overflow: hidden;
   &:before {
     z-index: -12;
     content: url("images/contact/oval-blue.svg");
     position: absolute;
+    left: 149px;
+    top: 50px;
+    @media (max-width: 992px) {
+      left: -99px;
+      top: 30px;
+    }
+    @media (max-width: 575px) {
+      left: -348px;
+      top: -57px;
+    }
   }
   &__top {
     display: flex;
@@ -27,6 +39,13 @@
   &__button {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    &:after {
+      content: url("images/advantages/oval-orange.svg");
+      position: absolute;
+      right: -101px;
+      top: 15px;
+    }
   }
   &__input {
     margin-bottom: 20px;
@@ -34,6 +53,7 @@
     display: flex;
     flex-direction: column;
     input {
+      position: relative;
       padding-left: 10px;
       width: 100%;
       max-width: 560px;
@@ -44,6 +64,15 @@
       font-size: 16px;
       font-weight: 100;
       line-height: 16px;
+      &:nth-child(4) {
+        &:before {
+          content: "";
+          position: absolute;
+          right: 20px;
+          height: 40px;
+          border-right: 1px solid #b7b1b1;
+        }
+      }
       &:active,
       &:focus {
         outline: none;
