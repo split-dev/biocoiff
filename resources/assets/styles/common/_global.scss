@@ -94,3 +94,12 @@
     }
   }
 }
+.current {
+  &:before {
+    z-index: -12;
+    transition: 0.3s;
+    opacity: 1 !important;
+    content: url("images/icons/oval-border-small.svg");
+    position: absolute;
+  }
+}
