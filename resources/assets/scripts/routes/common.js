@@ -3,13 +3,11 @@ import AOS from 'aos'
 import '../components/spincrement'
 //eslint-disable-next-line no-unused-vars
 import Swiper from 'swiper/swiper-bundle';
-import 'inputmask';
 export default {
   init() {
     AOS.init({
       duration: 1200,
     })
-    $('#tel').inputmask({'mask': '(+33) 0 660 209 333'}); //specifying options
     //eslint-disable-next-line no-unused-vars
     var swiper = new Swiper('.swiper-container', {
       effect: 'fade',

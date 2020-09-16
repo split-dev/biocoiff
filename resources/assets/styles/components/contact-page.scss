@@ -1,6 +1,12 @@
 .contact {
+  display: flex;
   position: relative;
   padding-top: 150px;
+  &:before {
+    z-index: -12;
+    content: url("images/contact/oval-blue.svg");
+    position: absolute;
+  }
   &__top {
     display: flex;
     flex-direction: column;
