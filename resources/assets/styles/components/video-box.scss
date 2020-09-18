@@ -5,10 +5,16 @@
     justify-content: space-between;
   }
   &__top {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &:before {
+      content: url("images/icons/oval-big-green.svg");
+      position: absolute;
+      left: -220px;
+    }
     h2 {
       margin-bottom: 80px;
     }
@@ -74,14 +80,29 @@
   &__left {
     justify-content: flex-start;
     h2 {
+      position: relative;
       text-align: right;
       margin-left: 100px;
+      &:after {
+        content: url("images/advantages/oval-blue.svg");
+        position: absolute;
+        top: 0;
+        left: 283px;
+        z-index: -12;
+      }
     }
   }
   &__right {
     justify-content: flex-end;
     h2 {
+      position: relative;
       margin-right: 100px;
+      &:after {
+        content: url("images/advantages/oval-orange.svg");
+        position: absolute;
+        right: 56px;
+        top: 22px;
+      }
     }
   }
   &__right,
