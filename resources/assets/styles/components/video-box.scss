@@ -1,0 +1,99 @@
+.video-box {
+  &__line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      margin-bottom: 80px;
+    }
+  }
+  &__small-video {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:before {
+      position: absolute;
+      content: url("images/franchise/video-oval.svg");
+      top: 77px;
+    }
+    span {
+      margin-top: 15px;
+      color: #150a2c;
+      @include h-reg;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    video {
+      background-color: #d8d8d8;
+      width: 100%;
+      max-width: 350px;
+      height: 240px;
+    }
+  }
+  &__big-video {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 480px;
+    &:before {
+      position: absolute;
+      content: url("images/franchise/video-oval.svg");
+    }
+    span {
+      margin-top: 15px;
+      color: #150a2c;
+      @include h-reg;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    video {
+      background-color: #d8d8d8;
+      width: 100%;
+      max-width: 480px;
+      height: 360px;
+    }
+  }
+  &__centre {
+    padding-bottom: 100px;
+    padding-top: 130px;
+  }
+  &__left {
+    justify-content: flex-start;
+    h2 {
+      text-align: right;
+      margin-left: 100px;
+    }
+  }
+  &__right {
+    justify-content: flex-end;
+    h2 {
+      margin-right: 100px;
+    }
+  }
+  &__right,
+  &__left {
+    display: flex;
+    align-items: center;
+    h2 {
+      color: #4a3c3a;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 80px;
+      max-width: 372px;
+    }
+  }
+}

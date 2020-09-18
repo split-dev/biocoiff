@@ -1,8 +1,8 @@
 .page-hero {
   position: relative;
   padding-top: 155px;
-  margin-bottom: 80px;
-  overflow-y: hidden;
+  padding-bottom: 80px;
+  overflow: hidden;
   @media (max-width: 575px) {
     margin-bottom: 60px;
   }
