@@ -23,6 +23,13 @@ footer {
   @media (max-width: 991px) {
     margin-top: 50px;
   }
+  &__line {
+    display: flex;
+    width: 100%;
+    ul:last-child {
+      margin-top: 0 !important;
+    }
+  }
   &__content {
     display: flex;
     width: 100%;
@@ -47,7 +54,8 @@ footer {
   &__ul-first {
     margin-right: 190px;
     @media (max-width: 575px) {
-      margin-right: 75px;
+      margin-right: 0;
+      width: 100%;
     }
   }
   &__bottom {
