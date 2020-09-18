@@ -1,0 +1,81 @@
+.you {
+  padding-top: 200px;
+  overflow: hidden;
+  h2 {
+    color: #4a3c3a;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 64px;
+  }
+  &__left {
+    display: flex;
+  }
+  &__img-1 {
+    margin-left: -80px;
+  }
+  &__img-2 {
+    margin-left: -55px;
+    margin-top: 75px;
+  }
+  &__img-3 {
+    margin-left: 90px;
+    margin-top: 125px;
+  }
+  &__right {
+    max-width: 584px;
+    margin-top: 205px;
+    margin-left: 112px;
+    h2 {
+      color: #4a3c3a;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 48px;
+      margin-bottom: 19px;
+    }
+    p {
+      color: #4a3c3a;
+      @include h-reg;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 48px;
+    }
+  }
+  &__img-block {
+    display: flex;
+  }
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 259px;
+    height: 259px;
+    &:last-child {
+      background-image: url("images/advantages/oval-yellow.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    h3 {
+      color: #4a3c3a;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 48px;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 204px;
+      color: #4a3c3a;
+      @include h-reg;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}

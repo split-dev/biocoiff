@@ -1,4 +1,4 @@
-.contact {
+.salon-contact {
   display: flex;
   position: relative;
   padding-top: 150px;
@@ -66,13 +66,47 @@
       line-height: 16px;
     }
   }
+  &__textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    textarea {
+      width: 100%;
+      max-width: 560px;
+      height: 160px;
+      border: 1px solid #b7b1b1;
+      resize: none;
+      color: #101318;
+      padding-left: 10px;
+      padding-top: 10px;
+      @include thin;
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 16px;
+      &::placeholder {
+        color: #101318;
+        @include thin;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 16px;
+      }
+    }
+    label {
+      margin-left: 15px;
+      margin-bottom: 12px;
+      color: #101318;
+      @include roman;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
   &__input {
     margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     input {
-      position: relative;
       padding-left: 10px;
       width: 100%;
       max-width: 560px;
@@ -83,15 +117,6 @@
       font-size: 16px;
       font-weight: 100;
       line-height: 16px;
-      &:nth-child(4) {
-        &:before {
-          content: "";
-          position: absolute;
-          right: 20px;
-          height: 40px;
-          border-right: 1px solid #b7b1b1;
-        }
-      }
       &:active,
       &:focus {
         outline: none;
@@ -106,6 +131,7 @@
       }
     }
     label {
+      margin-left: 15px;
       margin-bottom: 12px;
       color: #101318;
       @include roman;

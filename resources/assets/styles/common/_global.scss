@@ -94,6 +94,44 @@
     }
   }
 }
+.contact-before-yellow {
+  position: relative;
+  &:before {
+    left: -40px;
+    top: 516px;
+    z-index: -12;
+    content: url("images/franchise/yellow-big.svg");
+    position: absolute;
+  }
+  h2 {
+    &:before {
+      content: url("images/franchise/big-blue.svg");
+      position: absolute;
+      z-index: -12;
+      border-radius: 50%;
+      left: -216px;
+      top: -175px;
+    }
+  }
+}
+.contact-before {
+  position: relative;
+  &:before {
+    z-index: -12;
+    content: url("images/contact/oval-blue.svg");
+    position: absolute;
+    left: 149px;
+    top: 50px;
+    @media (max-width: 992px) {
+      left: -99px;
+      top: 30px;
+    }
+    @media (max-width: 575px) {
+      left: -348px;
+      top: -57px;
+    }
+  }
+}
 .current {
   &:before {
     z-index: -12;
