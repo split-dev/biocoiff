@@ -13,8 +13,10 @@ export default {
     var swiper = new Swiper('.swiper-container', {
       effect: 'fade',
     });
+    /*$('.first-img').addClass('active');*/
     $('.phone').mask('0 000 000 000');
     $('.card-detail__small-img').click (function () {
+     /* $(this).prev().removeClass('active');*/
       $(this).toggleClass('active');
       let index = $(this).attr('data-id');
       swiper.slideTo ( index );

@@ -48,6 +48,25 @@
     display: flex;
     align-items: center;
   }
+  ul {
+    a {
+      position: relative;
+      &:before {
+        top: -15px;
+        z-index: -12;
+        transition: 0.3s;
+        opacity: 0;
+        left: -18px;
+        content: url("images/icons/oval-border-small.svg");
+        position: absolute;
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
   &__buttons {
     display: flex;
     flex-direction: column;
@@ -55,6 +74,23 @@
     margin-bottom: 40px;
     a {
       margin-bottom: 20px;
+    }
+    a:first-child {
+      position: relative;
+      &:before {
+        top: -15px;
+        z-index: -12;
+        transition: 0.3s;
+        opacity: 0;
+        left: -18px;
+        content: url("images/icons/oval-border-small.svg");
+        position: absolute;
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
     }
     a:nth-child(2) {
       &:before {

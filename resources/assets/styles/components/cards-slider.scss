@@ -59,11 +59,11 @@
   }
   &__say {
     position: absolute;
-    top: 43px;
-    right: 263px;
+    top: 34px;
+    right: 333px;
     @media (max-width: 1199px) {
       top: -1px;
-      right: 170px;
+      right: 222px;
     }
     @media (max-width: 992px) {
       right: 300px;
@@ -191,13 +191,13 @@
   }
   &__right {
     width: 100%;
-    height: 420px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     transition: 0.4s;
-    max-width: 426px;
+    max-width: 320px;
     @media (max-width: 1118px) {
       flex-direction: column;
       margin-top: 30px;
@@ -206,24 +206,41 @@
     @media (max-width: 992px) {
       order: 1;
       flex-direction: row;
-      max-width: 100%;
+      max-width: 392px;
       height: 100%;
       margin-bottom: 30px;
+      justify-content: center;
     }
     @media (max-width: 575px) {
-      max-width: 335px;
+      max-width: 315px;
     }
     &-top {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
+      margin-bottom: 64px;
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+      }
+      .card-detail__small-img:first-child {
+        margin-right: 80px;
+        @media (max-width: 991px) {
+          margin-right: 20px;
+        }
+      }
     }
     &-bottom {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
+      .card-detail__small-img:first-child {
+        margin-right: 80px;
+        @media (max-width: 991px) {
+          margin-right: 20px;
+        }
+      }
     }
     .active {
       &:before {
@@ -263,6 +280,15 @@
         transition: 0.4s;
         top: -77px;
         right: 12px;
+        @media (max-width: 575px) {
+          content: url("images/slider/small-oval-border.svg");
+          max-width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          border: 1px solid  rgba(25, 20, 19, 0.41);
+          right: 100px;
+          top: -58px;
+        }
       }
       img {
         transition: 0.4s;
