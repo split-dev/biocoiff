@@ -4,11 +4,12 @@ import '../components/spincrement'
 //eslint-disable-next-line no-unused-vars
 import Swiper from 'swiper/swiper-bundle';
 import 'jquery-mask-plugin'
+import 'aos'
 export default {
   init() {
     AOS.init({
-      duration: 1200,
-    })
+      once: true,
+    });
     //eslint-disable-next-line no-unused-vars
     var swiper = new Swiper('.swiper-container', {
       effect: 'fade',
