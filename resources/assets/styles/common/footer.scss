@@ -37,6 +37,7 @@ footer {
   }
   &__content {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     @media (max-width: 991px) {
       flex-wrap: wrap;
@@ -45,8 +46,15 @@ footer {
       justify-content: center;
     }
   }
+  &__uls {
+    width: 100%;
+    display: flex;
+    max-width: 800px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
   &__logo {
-    margin-right: 135px;
     position: relative;
     z-index: 9;
     @media (max-width: 991px) {
@@ -57,7 +65,7 @@ footer {
     }
   }
   &__ul-first {
-    margin-right: 190px;
+    width: 100%;
     @media (max-width: 1199px) {
       margin-right: 0;
     }
@@ -80,7 +88,7 @@ footer {
   }
   ul {
     &:last-child {
-      margin-left: 165px;
+      width: 100%;
       @media (max-width: 991px) {
         margin-top: 30px;
         margin-left: 0;
@@ -92,7 +100,6 @@ footer {
       }
       @media (max-width: 400px) {
         align-items: normal;
-        margin-top: 0;
       }
     }
     li {
