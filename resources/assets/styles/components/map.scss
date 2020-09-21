@@ -1,0 +1,47 @@
+.map {
+  padding-bottom: 200px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__right {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h3 {
+      max-width: 378px;
+      margin-bottom: 35px;
+    }
+    p {
+      max-width: 350px;
+      margin-bottom: 20px;
+      z-index: 12;
+    }
+    span {
+      @include roman;
+    }
+    a {
+      margin-top: 20px;
+    }
+  }
+  &__link {
+    position: relative;
+    z-index: 12;
+    display: flex;
+    justify-content: flex-end;
+    &:after {
+      position: absolute;
+      z-index: -12;
+      content: "";
+      width: 216px;
+      height: 216px;
+      border-radius: 50%;
+      background-color: #f3f9fa;
+      box-shadow: 2px 4px 51px 0 #f3f9fa;
+      right: -130px;
+      top: -57px;
+    }
+  }
+}

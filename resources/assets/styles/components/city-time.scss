@@ -1,4 +1,5 @@
 .city-time {
+  padding-bottom: 160px;
   &__header {
     margin-bottom: 75px;
     display: flex;
@@ -27,17 +28,25 @@
     border-radius: 50%;
     max-width: 160px;
     height: 160px;
+    transition: 0.3s;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid rgba(25, 20, 19, 0.41);
+    }
     &:nth-child(1) {
       background-color: #fffbf0;
       box-shadow: 2px 4px 51px 0 #fffbf0;
+      margin-right: 104px;
     }
     &:nth-child(2) {
       background-color: #f3f9fa;
       box-shadow: 2px 4px 51px 0 #f3f9fa;
+      margin-right: 104px;
     }
     &:nth-child(3) {
       background-color: #eff8ed;
       box-shadow: 2px 4px 51px 0 #eff8ed;
+      margin-right: 104px;
     }
     &:nth-child(4) {
       background-color: #fcf3ed;
