@@ -4,7 +4,7 @@
   padding-bottom: 80px;
   overflow: hidden;
   @media (max-width: 575px) {
-    margin-bottom: 60px;
+    padding-bottom: 15px;
   }
   &__content {
     display: flex;
@@ -46,6 +46,9 @@
       margin-top: 80px;
       margin-bottom: 100px;
       margin-left: 60px;
+    }
+    @media (max-width: 360px) {
+      margin-left: 15px;
     }
   }
   &__logo {
@@ -107,6 +110,9 @@
       }
       @media (max-width: 1300px) {
         right: 264px;
+      }
+      @media (max-width: 383px) {
+        right: 217px;
       }
     }
   }

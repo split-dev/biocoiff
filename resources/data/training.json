@@ -1,3 +1,33 @@
 {
-  "class-training": "current"
+  "class-training": "current",
+  "card-slider": [
+    {
+      "id": "0",
+      "img-big": "images/slider/men.jpg",
+      "img-mob": "images/slider/men.jpg",
+      "text": "Fort de notre expérience dans le végétal, nous avons décidé de répondre à la demande de nombreux coiffeurs qui veulent apprendre la technique de la coloration végétale. A plusieurs dates dans l'année, nous formons les professionnels de la coiffure.",
+      "h5": "John Smith"
+    },
+    {
+      "id": "1",
+      "img-big": "images/slider/ledi-1.jpg",
+      "img-mob": "images/slider/ledi-1.jpg",
+      "text": "Fort de notre expérience dans le végétal, nous avons décidé de répondre à la demande de nombreux coiffeurs qui veulent apprendre la technique de la coloration végétale. A plusieurs dates dans l'année, nous formons les professionnels de la coiffure.",
+      "h5": "John Smith"
+    },
+    {
+      "id": "2",
+      "img-big": "images/slider/ledi-2.jpg",
+      "img-mob": "images/slider/ledi-2.jpg",
+      "text": "Fort de notre expérience dans le végétal, nous avons décidé de répondre à la demande de nombreux coiffeurs qui veulent apprendre la technique de la coloration végétale. A plusieurs dates dans l'année, nous formons les professionnels de la coiffure.",
+      "h5": "John Smith"
+    },
+    {
+      "id": "3",
+      "img-big": "images/slider/ledi-3.jpg",
+      "img-mob": "images/slider/ledi-3.jpg",
+      "text": "Fort de notre expérience dans le végétal, nous avons décidé de répondre à la demande de nombreux coiffeurs qui veulent apprendre la technique de la coloration végétale. A plusieurs dates dans l'année, nous formons les professionnels de la coiffure.",
+      "h5": "John Smith"
+    }
+  ]
 }

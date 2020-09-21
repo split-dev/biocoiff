@@ -46,10 +46,10 @@ export default {
       $('.shadow').toggleClass('show-shadow');
       $('body').toggleClass('body-hidden');
     });
-    $(document).mouseup(function (e){ // событие клика по веб-документу
-      var div = $('.open-mobile'); // тут указываем ID элемента
-      if (!div.is(e.target) // если клик был не по нашему блоку
-        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    $(document).mouseup(function (e){
+      var div = $('.open-mobile');
+      if (!div.is(e.target)
+        && div.has(e.target).length === 0) {
         $('.nav').css('position', 'fixed')
         $('.nav').css('z-index', '9999')
         $('.mobile-menu').removeClass('open-mobile');
