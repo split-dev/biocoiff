@@ -1,0 +1,49 @@
+.training-hero {
+  padding-top: 60px;
+  padding-bottom: 140px;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    z-index: -12;
+    content: url("images/contact/oval-blue.svg");
+    position: absolute;
+    right: -290px;
+    top: 15px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      max-width: 185px;
+    }
+  }
+  &__left {
+    position: relative;
+    padding-top: 140px;
+    margin-right: 150px;
+    &:before {
+      z-index: -12;
+      content: url("images/franchise/after-h1.svg");
+      position: absolute;
+      left: -193px;
+      top: 93px;
+    }
+  }
+  &__right {
+    margin-top: 300px;
+    max-width: 355px;
+    margin-left: 70px;
+    h3 {
+      position: relative;
+      max-width: 300px;
+      margin-bottom: 20px;
+      &:after {
+        z-index: -12;
+        content: url("images/icons/oval-border.svg");
+        position: absolute;
+        top: -70px;
+        right: -10px;
+      }
+    }
+  }
+}

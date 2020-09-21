@@ -22,6 +22,7 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 @import "~swiper/swiper";
+@import "~aos/dist/aos.css";
 
 /**
  * ==========
@@ -48,6 +49,8 @@
 @import "components/video-box";
 @import "components/you";
 @import "components/salon-contact";
+@import "components/training-hero";
+@import "components/city-time";
 /**
  * ==========
  * Layouts

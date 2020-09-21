@@ -5,6 +5,21 @@
       "title": "Home Page",
       "description": "pending",
       "url": "/index.html"
+    },
+    {
+      "title": "Franchise Page",
+      "description": "pending",
+      "url": "/franchise.html"
+    },
+    {
+      "title": "Contact Page",
+      "description": "pending",
+      "url": "/contact.html"
+    },
+    {
+      "title": "Training Page",
+      "description": "pending",
+      "url": "/training.html"
     }
   ]
 }
