@@ -3,6 +3,9 @@
   padding-bottom: 140px;
   overflow: hidden;
   position: relative;
+  @media (max-width: 575px) {
+    padding-bottom: 80px;
+  }
   &:after {
     z-index: -12;
     content: url("images/contact/oval-blue.svg");
@@ -13,26 +16,83 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
     h1 {
       max-width: 185px;
+    }
+  }
+  &__mobile {
+    display: flex;
+    @media (max-width: 991px) {
+      justify-content: center;
     }
   }
   &__left {
     position: relative;
     padding-top: 140px;
     margin-right: 150px;
+    @media (max-width: 1400px) {
+      margin-right: 100px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 50px;
+    }
+    @media (max-width: 575px) {
+      margin-right: 30px;
+      padding-top: 55px;
+    }
+    @media (max-width: 380px) {
+      padding-top: 35px;
+    }
     &:before {
       z-index: -12;
       content: url("images/franchise/after-h1.svg");
       position: absolute;
       left: -193px;
       top: 93px;
+      @media (max-width: 575px) {
+        left: -313px;
+        top: -27px;
+      }
+    }
+  }
+  &__img {
+    @media (max-width: 991px) {
+      max-width: 360px;
+    }
+    @media (max-width: 575px) {
+      max-width: 260px;
+      margin-right: -80px;
+    }
+    img {
+      width: 100%;
     }
   }
   &__right {
     margin-top: 300px;
     max-width: 355px;
     margin-left: 70px;
+    @media (max-width: 1400px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @media (max-width: 1199px) {
+      margin-top: 245px;
+    }
+    @media (max-width: 1040px) {
+      margin-top: 180px;
+    }
+    @media (max-width: 991px) {
+      margin: 80px auto 0 auto;
+    }
+    @media (max-width: 575px) {
+      margin-left: 40px;
+    }
+    @media (max-width: 375px) {
+      margin-left: 30px;
+    }
     h3 {
       position: relative;
       max-width: 300px;
@@ -43,6 +103,10 @@
         position: absolute;
         top: -70px;
         right: -10px;
+        @media (max-width: 991px) {
+          left: -43px;
+          right: 0;
+        }
       }
     }
   }

@@ -1,13 +1,36 @@
 .objective {
+  overflow: hidden;
+  padding-top: 200px;
+  @media (max-width: 991px) {
+    padding-top: 150px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 60px;
+  }
   &__right {
     width: 100%;
+    @media (max-width: 991px) {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
     img:first-child {
       float: right;
+      @media (max-width: 767px) {
+        max-width: 150px;
+      }
+      @media (max-width: 400px) {
+        max-width: 120px;
+      }
     }
   }
   &__content {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
     h2 {
       width: 100%;
       max-width: 475px;
@@ -16,6 +39,13 @@
       margin-bottom: 40px;
       position: relative;
       z-index: 9;
+      @media (max-width: 767px) {
+        font-size: 40px;
+      }
+      @media (max-width: 575px) {
+        max-width: 440px;
+        margin-bottom: 20px;
+      }
       &:before {
         width: 192px;
         height: 192px;
@@ -27,6 +57,10 @@
         box-shadow: 2px 4px 51px 20px #f3f9fa;
         left: -76px;
         top: -65px;
+        @media (max-width: 575px) {
+          left: -92px;
+          top: -132px;
+        }
       }
     }
     p {
@@ -35,27 +69,63 @@
       font-size: 16px;
       line-height: 24px;
       max-width: 344px;
+      @media (max-width: 575px) {
+        max-width: 430px;
+      }
     }
   }
   &__left {
     max-width: 475px;
     width: 100%;
+    @media (max-width: 991px) {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      margin: auto;
+    }
+    @media (max-width: 767px) {
+      max-width: 394px;
+    }
+    @media (max-width: 575px) {
+      max-width: 100%;
+      align-items: center;
+    }
   }
   &__line {
     margin-top: 106px;
     display: flex;
+    @media (max-width: 991px) {
+      width: 100%;
+      justify-content: center;
+      margin-top: -70px;
+    }
+    @media (max-width: 767px) {
+      margin-top: -40px;
+    }
     img {
       width: 100%;
       height: 100%;
       &:first-child {
         max-width: 306px;
         max-height: 403px;
+        @media (max-width: 767px) {
+          max-width: 170px;
+        }
       }
       &:last-child {
         margin-left: 90px;
         margin-top: 125px;
         max-width: 261px;
         max-height: 304px;
+        @media (max-width: 767px) {
+          max-width: 130px;
+          margin-top: 95px;
+          margin-left: 75px;
+        }
+        @media (max-width: 400px) {
+          margin-left: 20px;
+        }
       }
     }
   }

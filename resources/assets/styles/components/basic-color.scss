@@ -2,6 +2,12 @@
   display: flex;
   padding-bottom: 120px;
   overflow: hidden;
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 85px;
+  }
   &__img {
     display: flex;
     margin-left: -88px;
@@ -9,6 +15,11 @@
     max-width: 520px;
     width: 100%;
     margin-top: 50px;
+    z-index: 999;
+    @media (max-width: 575px) {
+      margin-left: -33px;
+      max-width: 360px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -20,6 +31,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media (max-width: 1070px) {
+      max-width: 560px;
+    }
+  }
+  &__info {
+    z-index: 99;
   }
   &__link {
     width: 100%;
@@ -27,6 +44,9 @@
     display: flex;
     justify-content: flex-end;
     z-index: 9;
+    @media (max-width: 660px) {
+      padding-right: 15px;
+    }
     &:after {
       content: "";
       width: 216px;
@@ -47,6 +67,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media (max-width: 991px) {
+      padding-top: 50px;
+      align-items: center;
+      margin: auto;
+    }
+    @media (max-width: 575px) {
+      padding: 50px 15px 0 15px;
+    }
     h3 {
       width: 100%;
       max-width: 500px;
@@ -65,9 +93,13 @@
         right: -40px;
         top: -94px;
         z-index: -12;
+        @media (max-width: 575px) {
+          top: -165px;
+        }
       }
     }
     p {
+      z-index: 99;
       color: #4a3c3a;
       line-height: 24px;
       max-width: 430px;
