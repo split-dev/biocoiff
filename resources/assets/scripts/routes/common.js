@@ -38,6 +38,12 @@ export default {
       lockAnchors: false,
       normalScrollElements: '.scrollable-content',
     })*/
+    $(document).ready(function () {
+      $('.accordion__top').click(function (){
+        $(this).next().slideToggle(400);
+        $(this).toggleClass('icon');
+      });
+    });
     var headroom  = new Headroom(document.querySelector('nav'));
     headroom.init();
     $('.nav__burger').click(function() {
