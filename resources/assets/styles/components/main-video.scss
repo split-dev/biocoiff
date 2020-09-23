@@ -1,0 +1,118 @@
+.main-video {
+  display: flex;
+  padding: 200px 0 100px 0;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    padding-top: 130px;
+    flex-direction: column;
+  }
+  .mission {
+    padding: 0;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__text {
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 575px) {
+      align-items: normal;
+      justify-content: flex-start;
+    }
+  }
+  &__video {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    &:before {
+      content: url("images/choose/play.svg");
+      position: absolute;
+      left: -30px;
+      @media (max-width: 991px) {
+        left: 50%;
+      }
+      @media (max-width: 575px) {
+        content: url("images/choose/play-small.svg");
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 504px;
+      @media (max-width: 575px) {
+        max-height: 270px;
+      }
+    }
+    @media (max-width: 991px) {
+      padding-top: 40px;
+      margin-left: -100px;
+    }
+  }
+  h2 {
+    max-width: 370px;
+    color: #4a3c3a;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 9;
+    &:before {
+      content: "";
+      width: 296px;
+      height: 296px;
+      background-color: #fcf1eb;
+      border-radius: 50%;
+      box-shadow: 2px 4px 51px 21px #fcf1eb;
+      position: absolute;
+      z-index: -12;
+      left: -159px;
+      top: -119px;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 575px) {
+      max-width: 335px;
+    }
+  }
+  p {
+    max-width: 340px;
+    color: #101318;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    z-index: 9;
+    &:after {
+      content: "";
+      width: 331px;
+      height: 331px;
+      background-color: #f3f9fa;
+      border-radius: 50%;
+      box-shadow: 2px 4px 51px 15px #f3f9fa;
+      position: absolute;
+      z-index: -12;
+      right: -154px;
+      top: -100px;
+    }
+  }
+}
