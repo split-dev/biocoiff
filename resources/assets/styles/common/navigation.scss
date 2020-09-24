@@ -15,15 +15,11 @@
 .nav {
   width: 100%;
   position: fixed;
-  padding: 0 80px 0 80px;
   display: flex;
   align-items: center;
   height: 115px;
   background: #fff;
   z-index: 9999;
-  @media (max-width: 1005px) {
-    padding: 0 40px 0 40px;
-  }
   @media (max-width: 991px) {
     height: 75px;
   }
