@@ -20,6 +20,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &:nth-child(2) {
+      li:first-child {
+        list-style: url("images/choose/oval-gray.svg");
+      }
+    }
+    &:nth-child(3) {
+      li:first-child {
+        list-style: url("images/choose/oval-gray.svg");
+      }
+    }
     &__body {
       position: relative;
       display: flex;
