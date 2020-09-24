@@ -90,6 +90,7 @@
     }
     @media (max-width: 991px) {
       margin-bottom: 30px;
+      font-size: 40px;
     }
     @media (max-width: 575px) {
       max-width: 335px;
@@ -113,6 +114,9 @@
       z-index: -12;
       right: -154px;
       top: -100px;
+      @media (max-width: 450px) {
+        top: -7px;
+      }
     }
   }
 }
