@@ -44,6 +44,9 @@ export default {
         $(this).toggleClass('icon');
       });
     });
+    $('.card__body').hover(function () {
+      $(this).next().toggleClass('visible');
+    });
     var headroom  = new Headroom(document.querySelector('nav'));
     headroom.init();
     $('.nav__burger').click(function() {
