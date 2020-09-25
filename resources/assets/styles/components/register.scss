@@ -1,0 +1,233 @@
+.register {
+  padding-top: 200px;
+  overflow: hidden;
+  padding-bottom: 110px;
+  @media (max-width: 991px) {
+    padding-top: 155px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 80px;
+  }
+  .first__checkbox {
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+  &__mobile {
+    display: none;
+    margin-bottom: 30px;
+    z-index: 99;
+    a {
+      color: #4a3c3a;
+      @include roman;
+      font-size: 16px;
+      margin-right: 3px;
+    }
+    span {
+      color: #4a3c3a;
+      @include med;
+      font-size: 16px;
+      margin-right: 3px;
+    }
+    @media (max-width: 575px) {
+      display: flex;
+    }
+  }
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    z-index: 9;
+    &:after {
+      content: "";
+      width: 216px;
+      height: 216px;
+      background-color: #fcf1eb;
+      border-radius: 50%;
+      box-shadow: 2px 4px 51px 4px #fcf1eb;
+      opacity: 0.7;
+      position: absolute;
+      z-index: -12;
+      bottom: -88px;
+      right: -145px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    &:before {
+      content: "";
+      width: 444px;
+      height: 444px;
+      background-color: #f2f9fa;
+      border-radius: 50%;
+      box-shadow: 2px 4px 51px 15px #f2f9fa;
+      position: absolute;
+      z-index: -12;
+      left: 70px;
+      top: -62px;
+      @media (max-width: 575px) {
+        width: 222px;
+        height: 222px;
+        left: -21px;
+        top: 0;
+      }
+    }
+  }
+  label {
+    margin-left: 15px;
+  }
+  &__box {
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .select-wrapper {
+    display: flex;
+    &:before {
+      content: "";
+      height: 40px;
+      border-left: 1px solid #b7b1b1;
+      position: absolute;
+      right: 38px;
+    }
+    &:after {
+      position: absolute;
+      content: url("images/icons/arrow-down.svg");
+      right: 10px;
+      top: 11px;
+    }
+  }
+  select {
+    height: 40px;
+    border: 1px solid #b7b1b1;
+    background: #fff;
+    width: 100%;
+    color: #101318;
+    @include thin;
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 15px;
+    appearance: none;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+      padding-right: 6px;
+      position: relative;
+      padding-left: 6px;
+      width: 100%;
+      max-width: 40px;
+      height: 40px;
+      border: 1px solid #b7b1b1;
+      border-right: 0 !important;
+      color: #101318;
+      @include thin;
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 16px;
+    }
+  }
+  .slideThree {
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid #b7b1b1;
+    background-color: rgba(175, 233, 162, 0.5);
+    position: relative;
+    label {
+      margin-left: 0 !important;
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #b7b1b1;
+      background-color: #fff;
+      cursor: pointer;
+      position: absolute;
+      top: 2px;
+      right: 3px;
+      z-index: 1;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    input[type=checkbox] {
+      visibility: hidden;
+      &:checked + label {
+        left: 3px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    label {
+      color: #101318;
+      @include thin;
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 16px;
+    }
+  }
+  .forms__checkbox {
+    margin-bottom: 10px;
+  }
+  &__chek {
+    margin-left: 15px;
+    label {
+      margin-bottom: 15px;
+    }
+    label {
+      margin-left: 0 !important;
+      margin-right: 24px;
+    }
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      @media (max-width: 991px) {
+        font-size: 40px;
+      }
+      @media (max-width: 575px) {
+        font-size: 36px !important;
+      }
+    }
+  }
+  form {
+    width: 100%;
+    max-width: 550px;
+    h3 {
+      margin-top: 70px;
+      margin-bottom: 30px;
+      margin-left: 15px;
+    }
+    label:first-child {
+      margin-bottom: 15px;
+      color: #101318;
+      @include roman;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+}
