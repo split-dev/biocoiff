@@ -1,0 +1,39 @@
+.composition {
+  padding-top: 100px;
+  display: flex;
+  &__right {
+    margin-right: 120px;
+    position: relative;
+    z-index: 9;
+    &:before {
+      content: "";
+      width: 216px;
+      height: 216px;
+      background-color: #eff8ed;
+      opacity: 0.5;
+      border-radius: 50%;
+      box-shadow: 2px 4px 51px 10px #eff8ed;
+      position: absolute;
+      z-index: -12;
+      left: -105px;
+      top: -89px;
+    }
+  }
+  &__text {
+    p {
+      margin-left: 65px;
+      max-width: 331px;
+    }
+    h2 {
+      margin-bottom: 70px;
+      margin-top: 90px;
+      max-width: 460px;
+      margin-left: -100px;
+      position: relative;
+      color: #4a3c3a;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 80px;
+    }
+  }
+}

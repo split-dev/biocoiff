@@ -1,0 +1,26 @@
+.colours-slider {
+  padding-top: 117px;
+  &__text {
+    margin-left: 160px;
+    width: 100%;
+    max-width: 315px;
+    margin-top: 90px;
+    h1 {
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 9;
+      &:before {
+        content: "";
+        width: 222px;
+        height: 222px;
+        background-color: #f3f9fa;
+        border-radius: 50%;
+        box-shadow: 2px 4px 51px 4px #f3f9fa;
+        position: absolute;
+        z-index: -12;
+        left: -100px;
+        top: -70px;
+      }
+    }
+  }
+}
