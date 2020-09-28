@@ -1,10 +1,11 @@
 <div class="main-video">
+  {{#with main-video}}
   <div class="container">
     <div class="row">
       <div class="mission-size col-xl-5 col-lg-6 col-md-12">
         <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="90" class="main-video__text">
-          <h2>Our history, Our values</h2>
-          <p>Biocoiff ' offers its entire range of products to hairdressing and aesthetic professionals: shampoos, hair care, coloring.</p>
+          <h2>{{h2}}</h2>
+          <p>{{p}}</p>
         </div>
       </div>
     </div>
@@ -20,4 +21,5 @@
       </div>
     </div>
   </div>
+    {{/with}}
 </div>
