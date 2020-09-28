@@ -1,14 +1,30 @@
 .tested {
   padding-top: 160px;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    padding-bottom: 125px;
+  }
   &__info {
     display: flex;
     align-items: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  &__text {
+    z-index: 12;
+    @media (max-width: 991px) {
+      padding-bottom: 60px;
+    }
   }
   &__img {
     display: flex;
     margin-left: 170px;
     position: relative;
     z-index: 9;
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
     &:before {
       content: "";
       width: 296px;

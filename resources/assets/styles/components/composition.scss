@@ -1,10 +1,22 @@
 .composition {
   padding-top: 100px;
   display: flex;
+  justify-content: center;
+  @media (max-width: 1199px) {
+    justify-content: flex-start;
+  }
   &__right {
     margin-right: 120px;
     position: relative;
     z-index: 9;
+    @media (max-width: 1320px) {
+      margin-right: 0;
+    }
+    @media (max-width: 1199px) {
+      position: absolute;
+      right: 0;
+      z-index: -4;
+    }
     &:before {
       content: "";
       width: 216px;
@@ -34,6 +46,9 @@
       font-size: 64px;
       font-weight: 400;
       line-height: 80px;
+      @media (max-width: 1199px) {
+        margin-left: -160px;
+      }
     }
   }
 }
