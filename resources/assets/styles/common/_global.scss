@@ -1,3 +1,47 @@
+.btn-oval {
+  z-index: 9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a3c3a;
+  @include roman;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 120px;
+  height: 32px;
+  transition: 0.3s;
+  &:after {
+    z-index: 9;
+    border: 1px solid rgba(25, 20, 19, 0.41);
+    transition: 0.3s;
+    position: absolute;
+    content: " ";
+    display: block;
+    left: -4px;
+    top: -3px;
+    bottom: -3px;
+    right: -4px;
+  }
+  &:before {
+    content: "";
+    width: 59px;
+    height: 59px;
+    background-color: #eff8ed;
+    border-radius: 50%;
+    box-shadow: 2px 4px 51px 10px #eff8ed;
+    position: absolute;
+    z-index: -12;
+    opacity: 0;
+  }
+  &:hover {
+    color: #4a3c3a;
+    &:before {
+      opacity: 1;
+    }
+  }
+}
 .btn-border {
   position: relative;
   display: flex;
@@ -36,8 +80,9 @@
     opacity: 0;
     bottom: 0;
     right: 0;
-    width: 125px;
-    height: 37px;
+    width: 100%;
+    max-width: 125px;
+    height: 40px;
   }
   &:hover {
     color: #4a3c3a;
@@ -84,7 +129,7 @@
     bottom: 0;
     right: 0;
     width: 157px;
-    height: 37px;
+    height: 40px;
     opacity: 0;
   }
   &:hover {
