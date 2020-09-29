@@ -269,31 +269,74 @@
       @media (max-width: 375px) {
         max-width: 60px;
       }
-      &:before {
-        opacity: 0;
-        content: url("images/icons/oval-border.svg");
+      &:after {
+        content: "";
+        width: 120px;
+        height: 120px;
+        border: 1px solid #4a3c3a;
+        border-radius: 50%;
+        transition: 0.4s;
+        top: -87px;
+        right: 28px;
         position: absolute;
+        z-index: 9;
+        opacity: 0;
+        @media (max-width: 767px) {
+          width: 90px;
+          height: 90px;
+          top: -47px;
+          right: 22px;
+        }
+      }
+      &:before {
+        content: "";
+        width: 120px;
+        height: 120px;
+        background-color: #eff8ed;
+        border-radius: 50%;
+        box-shadow: 2px 4px 51px 10px #eff8ed;
+        position: absolute;
+        z-index: -12;
+        opacity: 0;
         transition: 0.4s;
         top: -77px;
         right: 12px;
-        @media (max-width: 575px) {
-          content: url("images/slider/small-oval-border.svg");
-          max-width: 90px;
+        @media (max-width: 767px) {
+          width: 90px;
           height: 90px;
-          border-radius: 50%;
-          border: 1px solid  rgba(25, 20, 19, 0.41);
-          right: 100px;
-          top: -58px;
+          top: -40px;
+          right: 10px;
         }
       }
+      /* &:before {
+     !*opacity: 0;
+     content: url("images/icons/oval-border.svg");
+     position: absolute;
+     transition: 0.4s;
+     top: -77px;
+     right: 12px;*!
+     @media (max-width: 575px) {
+       content: url("images/slider/small-oval-border.svg");
+       max-width: 90px;
+       height: 90px;
+       border-radius: 50%;
+       border: 1px solid  rgba(25, 20, 19, 0.41);
+       right: 100px;
+       top: -58px;
+     }
+   }*/
       img {
         transition: 0.4s;
         width: 100%;
+        z-index: 9;
       }
       &:hover {
         cursor: pointer;
+        &:after {
+          opacity: 0.49;
+        }
         &:before {
-          opacity: 0.5;
+          opacity: 1;
         }
       }
     }

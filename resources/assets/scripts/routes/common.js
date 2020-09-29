@@ -12,18 +12,20 @@ export default {
     });
     //eslint-disable-next-line no-unused-vars
     var swiper = new Swiper('.swiper-container', {
-      effect: 'fade',
+      slidesPerView: 1,
+      cssMode: true,
+      loop: true,
+      mousewheel: true,
+      keyboard: true,
     });
-    /*$('.first-img').addClass('active');*/
     $('.phone').mask('0 000 000 000');
     $('.card-detail__small-img').click (function () {
-     /* $(this).prev().removeClass('active');*/
       $(this).toggleClass('active');
       let index = $(this).attr('data-id');
       swiper.slideTo ( index );
     });
     $('.spincrement').spincrement({
-      // fade: false,
+      fade: true,
       duration: 4000,
       thousandSeparator: '',
     });
