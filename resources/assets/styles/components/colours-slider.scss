@@ -1,6 +1,7 @@
 .colours-slider {
   padding-top: 117px;
   overflow: hidden;
+  padding-bottom: 60px;
   &__right {
     margin-top: 150px;
     display: flex;
@@ -80,6 +81,9 @@
     width: 100%;
     max-width: 315px;
     margin-top: 90px;
+    @media (max-width: 767px) {
+      margin-left: 15px;
+    }
     h1 {
       margin-bottom: 30px;
       position: relative;

@@ -114,6 +114,14 @@
       line-height: 16px;
     }
   }
+  input {
+    display: flex;
+    align-items: center;
+    &::placeholder {
+      display: flex;
+      align-items: center;
+    }
+  }
   &__info {
     display: flex;
     flex-direction: column;

@@ -95,7 +95,7 @@ footer {
   ul {
     &:last-child {
       width: 100%;
-      @media (max-width: 991px) {
+      @media (max-width: 767px) {
         margin-top: 30px;
         margin-left: 0;
         display: block;

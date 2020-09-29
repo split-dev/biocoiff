@@ -5,6 +5,65 @@
   @media (max-width: 1199px) {
     justify-content: flex-start;
   }
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+  &__left {
+    img {
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      margin-left: -60px;
+    }
+    @media (max-width: 575px) {
+      margin-left: -120px;
+      max-width: 370px;
+    }
+    @media (max-width: 430px) {
+      max-width: 300px;
+      margin-left: -105px;
+    }
+  }
+  &__info {
+    margin: auto;
+    max-width: 331px;
+    padding-top: 30px;
+    z-index: 99;
+  }
+  &__mobile {
+    display: none;
+    margin: auto;
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .composition__small-img {
+      margin-top: 30px;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 9;
+      &:before {
+        content: "";
+        width: 162px;
+        height: 162px;
+        background-color: #eff8ed;
+        opacity: 0.5;
+        border-radius: 50%;
+        box-shadow: 2px 4px 51px 10px #eff8ed;
+        position: absolute;
+        z-index: -12;
+        right: 266px;
+        top: -91px;
+      }
+    }
+  }
+  &__line {
+    display: flex;
+  }
   &__right {
     margin-right: 120px;
     position: relative;
@@ -16,6 +75,9 @@
       position: absolute;
       right: 0;
       z-index: -4;
+    }
+    @media (max-width: 991px) {
+      display: none;
     }
     &:before {
       content: "";
@@ -35,6 +97,9 @@
     p {
       margin-left: 65px;
       max-width: 331px;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
     h2 {
       margin-bottom: 70px;
@@ -48,6 +113,22 @@
       line-height: 80px;
       @media (max-width: 1199px) {
         margin-left: -160px;
+      }
+      @media (max-width: 991px) {
+        font-size: 55px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        max-width: 395px;
+      }
+      @media (max-width: 575px) {
+        font-size: 36px !important;
+        line-height: 48px !important;
+        max-width: 260px;
+        margin-left: -70px;
+      }
+      @media (max-width: 430px) {
+        margin-top: 63px;
       }
     }
   }
