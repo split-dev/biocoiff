@@ -85,7 +85,7 @@
     align-items: center;
     @media (max-width: 575px) {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start !important;
     }
   }
   .select-wrapper {

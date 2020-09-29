@@ -101,8 +101,6 @@
         color: #101318;
         @include thin;
         font-size: 16px;
-        font-weight: 100;
-        line-height: 16px;
       }
     }
     label {
@@ -112,14 +110,6 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 16px;
-    }
-  }
-  input {
-    display: flex;
-    align-items: center;
-    &::placeholder {
-      display: flex;
-      align-items: center;
     }
   }
   &__info {
