@@ -4,7 +4,7 @@ export default {
   init() {
     //eslint-disable-next-line no-unused-vars
     if ($('.colours-slider').hasClass('colours-slider')) {
-      var Swiper = new Swiper('.swiper-container', {
+      var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -15,9 +15,16 @@ export default {
    let slide = false;
     $('.swiper-button-next').click(function () {
       if (slide) {
-        Swiper.slideTo(0);
+        mySwiper.slideTo(0);
       } else {
-        Swiper.slideNext();
+        mySwiper.slideNext();
+      }
+    });
+    $('.swiper-button-prev').click(function () {
+      if (slide) {
+        mySwiper.slideTo(0);
+      } else {
+        mySwiper.slidePrev();
       }
     });
   },
