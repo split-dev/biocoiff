@@ -1,5 +1,5 @@
 .tested {
-  padding-top: 160px;
+  padding-top: 10px;
   overflow: hidden;
   @media (max-width: 991px) {
     padding-bottom: 125px;
@@ -36,6 +36,12 @@
       z-index: -12;
       left: -107px;
       top: -47px;
+      @media (max-width: 575px) {
+        left: -59px;
+        top: -36px;
+        width: 230px;
+        height: 230px;
+      }
     }
     &:after {
       content: "";
@@ -47,13 +53,25 @@
       position: absolute;
       z-index: -12;
       right: -75px;
+      @media (max-width: 575px) {
+        right: 15px;
+        width: 170px;
+        height: 170px;
+      }
     }
     img {
       position: relative;
       z-index: 9;
+      @media (max-width: 575px) {
+        width: 100%;
+        max-width: 120px;
+      }
     }
     img:first-child {
       margin-right: 110px;
+      @media (max-width: 575px) {
+        margin-right: 40px;
+      }
     }
   }
   h2 {
@@ -63,6 +81,10 @@
     font-size: 64px;
     font-weight: 400;
     line-height: 80px;
+    @media (max-width: 991px) {
+      font-size: 48px;
+      line-height: 80px;
+    }
   }
   p {
     color: #4a3c3a;

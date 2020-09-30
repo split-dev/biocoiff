@@ -1,0 +1,82 @@
+.hair-problem {
+  padding-bottom: 120px;
+  &__text {
+    max-width: 434px;
+    margin-right: 120px;
+    position: relative;
+    z-index: 9;
+    &:before {
+      z-index: -12;
+      content: url("images/icons/oval-border.svg");
+      position: absolute;
+      top: -62px;
+      left: -43px;
+    }
+  }
+  &__ovals {
+    display: flex;
+    .hair-problem__box {
+      &:first-child {
+        background-color: #f3f9fa;
+        margin-right: 100px;
+      }
+      &:last-child {
+        background-color: #fffbef;
+        margin-right: 100px;
+      }
+    }
+  }
+  &__box {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      max-width: 110px;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+  &__top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  &__line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hair-problem__box {
+      &:first-child {
+        background-color: #fffbef;
+        margin-right: 100px;
+      }
+      &:nth-child(2) {
+        background-color: #f3f9fa;
+        margin-right: 100px;
+      }
+      &:nth-child(3) {
+        background-color: #eff8ed;
+        margin-right: 100px;
+      }
+      &:nth-child(4) {
+        background-color: #fcf1eb;
+        h3 {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -186,3 +186,16 @@
     position: absolute;
   }
 }
+.products-video {
+  p {
+    &:after {
+      display: none !important;
+    }
+  }
+  h2 {
+    max-width: 100% !important;
+    &:before {
+      background-color: #eff8ed !important;
+    }
+  }
+}
