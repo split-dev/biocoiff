@@ -36,6 +36,7 @@
     position: absolute;
     bottom: 0;
     @media (max-width: 575px) {
+      left: -65px;
       svg {
         width: 12px;
         height: 21px;
@@ -76,7 +77,7 @@
     flex-direction: column;
     max-width: 600px;
     @media (max-width: 575px) {
-      max-width: 460px;
+      max-width: 390px;
     }
     img {
       max-width: 140px;
@@ -92,12 +93,18 @@
     justify-content: flex-end;
     img {
       margin-right: 32px;
+      @media (max-width: 575px) {
+        margin-right: 11px;
+      }
     }
     img:last-child {
       margin-right: 0;
     }
     &:first-child {
       margin-bottom: 30px;
+      @media (max-width: 575px) {
+        margin-bottom: 11px;
+      }
     }
   }
   &__mobile {
@@ -116,6 +123,12 @@
     width: 100%;
     max-width: 315px;
     margin-top: 90px;
+    @media (max-width: 375px) {
+      margin-top: 60px;
+    }
+    @media (max-width: 375px) {
+      margin-top: 40px;
+    }
     p {
       @media (max-width: 575px) {
         display: none;
