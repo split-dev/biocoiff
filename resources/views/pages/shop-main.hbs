@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body>
+{{> ../common/mobile-menu }}
+{{> ../common/navigation }}
+<div class="shop">
+  <div class="container">
+    <div class="shop__content">
+      <div class="filter">
+        <div class="filter__accord">
+          <div class="filter__toggle">
+            <div class="filter__visible">
+              <span>Consommables</span>
+              <div class="filter__hide">
+                <div class="forms__checkbox">
+                  <input id="filter1" type="checkbox">
+                  <label for="filter1">Boissons chaudes</label>
+                </div>
+                <div class="forms__checkbox">
+                  <input id="filter2" type="checkbox">
+                  <label for="filter2">Cheeky Panda</label>
+                </div>
+                <div class="forms__checkbox">
+                  <input id="filter3" type="checkbox">
+                  <label for="filter3">Gants</label>
+                </div>
+                <div class="forms__checkbox">
+                  <input id="filter4" type="checkbox">
+                  <label for="filter4">Produits menegers</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop__boxes">
+        <div class="shop__block-top">
+          <p>Place for some promotions etc</p>
+        </div>
+        <div class="shop__info">
+          <div class="row">
+            {{#each shop__boxes}}
+            <div class="col-md-3">
+              <div class="like-block__small-box">
+                <div class="like-block__img">
+                  <img src="{{img}}" alt="">
+                </div>
+                <span>{{small-text}}</span>
+                <span>{{numbers}}</span>
+                <div class="shop__link">
+                  <a href="#" class="btn-border">Buy it now</a>
+                </div>
+              </div>
+            </div>
+              {{/each}}
+          </div>
+        </div>
+        <button class="big-btn">Next Page</button>
+        <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="90" class="like-block__bottom">
+          <h3>You may also like</h3>
+          <div class="like-block__line">
+            <div class="like-block__small-box">
+              <div class="like-block__img">
+                <img src="images/item/orange.jpg" alt="">
+              </div>
+              <span>"Tropical" infusion - Rooibos</span>
+              <span>(3gx24)</span>
+              <a href="#" class="btn-border">Buy it now
+              </a>
+            </div>
+            <div class="like-block__small-box">
+              <div class="like-block__img">
+                <img src="images/item/tropikal.jpg" alt="">
+              </div>
+              <span>"Tropical" infusion - Rooibos</span>
+              <span>(3gx24)</span>
+              <a href="#" class="btn-border">Buy it now
+              </a>
+            </div>
+            <div class="like-block__small-box">
+              <div class="like-block__img">
+                <img src="images/item/earl.jpg" alt="">
+              </div>
+              <span>"Tropical" infusion - Rooibos</span>
+              <span>(3gx24)</span>
+              <a href="#" class="btn-border">Buy it now
+              </a>
+            </div>
+            <div class="like-block__small-box">
+              <div class="like-block__img">
+                <img src="images/item/blue.jpg" alt="">
+              </div>
+              <span>"Tropical" infusion - Rooibos</span>
+              <span>(3gx24)</span>
+              <a href="#" class="btn-border">Buy it now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{> ../common/footer }}
+</body>
+</html>

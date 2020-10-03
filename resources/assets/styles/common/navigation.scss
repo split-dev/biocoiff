@@ -143,8 +143,9 @@
         left: -18px;
         content: url("images/icons/oval-border-small.svg");
         position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         @media (max-width: 1199px) and (min-width: 991px) {
-          top: -15px;
           left: -6px;
         }
       }

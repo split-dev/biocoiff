@@ -1,0 +1,64 @@
+{
+  "shop__boxes": [
+  {
+    "img": "images/item/orange.jpg",
+    "small-text": "\"Tropical\" infusion - Rooibos",
+    "numbers": "(3gx24)"
+  },
+    {
+      "img": "images/item/tropikal.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/earl.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/blue.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/orange.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/tropikal.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/earl.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/blue.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/orange.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/tropikal.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/earl.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    },
+    {
+      "img": "images/item/blue.jpg",
+      "small-text": "\"Tropical\" infusion - Rooibos",
+      "numbers": "(3gx24)"
+    }
+]
+}

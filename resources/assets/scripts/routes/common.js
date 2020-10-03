@@ -27,6 +27,10 @@ export default {
       swiper.slideTo ( index );
     });
 
+    $('.filter__visible').click(function () {
+      $(this).toggleClass('filter__active');
+      $(this).next().slideToggle(400);
+    });
 
     $('.spincrement').spincrement({
       fade: true,
