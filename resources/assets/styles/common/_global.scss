@@ -194,9 +194,12 @@
   }
   h2 {
     max-width: 100% !important;
+    @media (max-width: 991px) {
+      max-width: 365px !important;
+    }
     &:before {
       background-color: #eff8ed !important;
-      box-shadow: 2px 4px 51px 15px #eff8ed;
+      box-shadow: 2px 4px 51px 15px #eff8ed !important;
     }
   }
 }
