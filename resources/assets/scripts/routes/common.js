@@ -31,6 +31,10 @@ export default {
       $(this).toggleClass('filter__active');
       $(this).next().slideToggle(400);
     });
+    $('.filter__header').click(function () {
+      $(this).toggleClass('filter__header-active');
+      $(this).next().slideToggle(400);
+    });
 
     $('.spincrement').spincrement({
       fade: true,

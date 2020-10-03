@@ -30,6 +30,7 @@
     }
     @media (max-width: 575px) {
       max-width: 100%;
+      margin-right: 0;
     }
     a {
       margin-top: 5px;
@@ -38,6 +39,7 @@
       @media (max-width: 575px) {
         max-width: 330px;
         height: 45px;
+        font-size: 20px !important;
       }
       &:before {
         max-width: 166px;
