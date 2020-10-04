@@ -6,6 +6,9 @@
     padding-top: 130px;
     flex-direction: column;
   }
+  @media (max-width: 767px) {
+    padding-bottom: 10px;
+  }
   .mission {
     padding: 0;
     position: relative;

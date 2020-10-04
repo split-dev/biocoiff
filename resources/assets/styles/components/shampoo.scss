@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  @media (max-width: 991px) {
+    padding-bottom: 140px;
+  }
   h2 {
     position: absolute;
     white-space: nowrap;

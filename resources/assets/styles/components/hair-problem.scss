@@ -1,16 +1,29 @@
 .hair-problem {
   padding-bottom: 120px;
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+  }
   &__text {
     max-width: 434px;
     margin-right: 120px;
     position: relative;
     z-index: 9;
+    @media (max-width: 991px) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
     &:before {
       z-index: -12;
       content: url("images/icons/oval-border.svg");
       position: absolute;
       top: -62px;
       left: -43px;
+    }
+  }
+  &__block {
+    display: flex;
+    @media (max-width: 991px) {
+      margin-bottom: 16px;
     }
   }
   &__ovals {
@@ -23,6 +36,9 @@
       &:last-child {
         background-color: #fffbef;
         margin-right: 100px;
+        @media (max-width: 991px) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -46,12 +62,19 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 70px;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
   }
   &__line {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
     .hair-problem__box {
       &:first-child {
         background-color: #fffbef;
@@ -60,6 +83,9 @@
       &:nth-child(2) {
         background-color: #f3f9fa;
         margin-right: 100px;
+        @media (max-width: 991px) {
+          margin-right: 0;
+        }
       }
       &:nth-child(3) {
         background-color: #eff8ed;
@@ -67,6 +93,9 @@
       }
       &:nth-child(4) {
         background-color: #fcf1eb;
+        @media (max-width: 991px) {
+          margin-right: 0;
+        }
         h3 {
           margin-top: 20px;
         }
