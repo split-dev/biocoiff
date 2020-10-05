@@ -151,7 +151,7 @@
   &__info {
     display: flex;
     align-items: center;
-    @media (max-width: 1018px) {
+    @media (max-width: 991px) {
       flex-direction: column;
     }
     @media (max-width: 575px) {
