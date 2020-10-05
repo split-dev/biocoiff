@@ -182,6 +182,17 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 15px;
+    top: 15px;
+    background: #f3f9fa;
+    z-index: -12;
+  }
 }
 .current {
   &:before {
