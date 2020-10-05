@@ -12,6 +12,9 @@
     position: absolute;
     left: -100px;
     top: 340px;
+    @media (max-width: 1205px) {
+      left: -150px;
+    }
     @media (max-width: 991px) {
       display: none;
     }
@@ -126,8 +129,12 @@
     left: 330px;
     top: 52px;
     margin-top: 130px;
-    @media (max-width: 1400px) {
+    @media (max-width: 1490px) {
       left: 259px;
+    }
+    @media (max-width: 1205px) {
+      margin-top: 80px;
+      left: 220px;
     }
     @media (max-width: 991px) {
       position: relative;
