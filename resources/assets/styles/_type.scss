@@ -12,6 +12,14 @@ body {
 .row {
   width: 100%;
 }
+button {
+  &:focus,
+  &:active {
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+}
 h1 {
   color: #4a3c3a;
   @include h-reg;
