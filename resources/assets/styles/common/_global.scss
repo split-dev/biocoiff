@@ -177,6 +177,12 @@
     }
   }
 }
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
 .current {
   &:before {
     z-index: -12;
