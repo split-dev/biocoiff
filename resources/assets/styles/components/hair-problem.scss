@@ -32,10 +32,15 @@
       &:first-child {
         background-color: #f3f9fa;
         margin-right: 100px;
+        box-shadow: 2px 4px 51px 7px #f3f9fa;
+        @media (max-width: 575px) {
+          margin-right: 10px;
+        }
       }
       &:last-child {
         background-color: #fffbef;
         margin-right: 100px;
+        box-shadow: 2px 4px 51px 7px #fffbef;
         @media (max-width: 991px) {
           margin-right: 0;
         }
@@ -79,20 +84,30 @@
       &:first-child {
         background-color: #fffbef;
         margin-right: 100px;
+        box-shadow: 2px 4px 51px 7px #fffbef;
+        @media (max-width: 575px) {
+          margin-right: 10px;
+        }
       }
       &:nth-child(2) {
         background-color: #f3f9fa;
         margin-right: 100px;
+        box-shadow: 2px 4px 51px 7px #f3f9fa;
         @media (max-width: 991px) {
           margin-right: 0;
         }
       }
       &:nth-child(3) {
         background-color: #eff8ed;
+        box-shadow: 2px 4px 51px 7px #eff8ed;
         margin-right: 100px;
+        @media (max-width: 575px) {
+          margin-right: 10px;
+        }
       }
       &:nth-child(4) {
         background-color: #fcf1eb;
+        box-shadow: 2px 4px 51px 7px #fcf1eb;
         @media (max-width: 991px) {
           margin-right: 0;
         }

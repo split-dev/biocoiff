@@ -87,9 +87,6 @@
       position: relative;
       padding: 0;
       z-index: 9;
-      @media (max-width: 575px) {
-        max-height: 270px;
-      }
     }
     @media (max-width: 991px) {
       padding-top: 40px;
