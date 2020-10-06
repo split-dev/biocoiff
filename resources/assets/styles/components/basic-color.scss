@@ -44,7 +44,7 @@
     display: flex;
     justify-content: flex-end;
     z-index: 9;
-    @media (max-width: 660px) {
+    @media (max-width: 1050px) {
       padding-right: 15px;
     }
     &:after {
