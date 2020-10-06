@@ -11,8 +11,13 @@
   }
   &__img {
     margin-left: -90px;
-    img {
-      width: 100%;
+    &-bg {
+      width: 465px;
+      height: 560px;
+      @media (max-width: 575px) {
+        width: 311px;
+        height: 375px;
+      }
     }
     @media (max-width: 1199px) {
       margin-left: -150px;
@@ -46,6 +51,10 @@
     @media (max-width: 1250px) {
       margin-right: -101px;
     }
+    @media (max-width: 1025px) {
+      margin-top: 228px;
+      margin-left: 30px;
+    }
     @media (max-width: 991px) {
       display: none;
     }
@@ -60,6 +69,7 @@
     }
     @media (max-width: 1100px) {
       max-width: 400px;
+      margin-left: 30px;
     }
     @media (max-width: 991px) {
       align-items: baseline;

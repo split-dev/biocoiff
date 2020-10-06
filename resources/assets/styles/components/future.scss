@@ -53,6 +53,10 @@
     margin-top: 58px;
     display: flex;
     flex-direction: column;
+    margin-left: 170px;
+    @media (max-width: 1199px) {
+      margin-left: 0;
+    }
     @media (max-width: 991px) {
       order: 1;
       max-width: 500px;
@@ -94,7 +98,9 @@
   }
   &__content {
     display: flex;
-    justify-content: space-between;
+    @media (max-width: 1199px) {
+      justify-content: space-between;
+    }
     @media (max-width: 991px) {
       flex-direction: column;
     }

@@ -35,7 +35,9 @@ export default {
       $('.slideThree').toggleClass('slideThree__checked');
     });
 
-
+    $('.partner li').click(function () {
+      $(this).toggleClass('li-active')
+    })
     $(document).ready(function () {
       $('.video-box__button').click(function (e) {
         $(this).removeClass('video-btn-none');

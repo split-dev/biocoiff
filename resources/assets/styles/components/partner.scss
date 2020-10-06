@@ -22,12 +22,12 @@
     align-items: center;
     &:nth-child(2) {
       li:first-child {
-        list-style: url("images/choose/oval-gray.svg");
+        list-style: url("images/choose/list.svg");
       }
     }
     &:nth-child(3) {
       li:first-child {
-        list-style: url("images/choose/oval-gray.svg");
+        list-style: url("images/choose/list.svg");
       }
     }
     &__body {
@@ -74,6 +74,7 @@
     ul {
       width: 100%;
       li {
+        transition: 0.3s;
         list-style: url("images/choose/list.svg");
         margin-left: 6px;
         margin-bottom: 13px;
@@ -84,6 +85,9 @@
         font-size: 16px;
         line-height: 24px;
       }
+    }
+    .li-active {
+      list-style: url("images/choose/oval-gray.svg") !important;
     }
     .visible {
       opacity: 1;

@@ -13,6 +13,9 @@
     align-items: flex-end;
     position: relative;
     z-index: 9;
+    @media (max-width: 767px) {
+      margin-top: 220px;
+    }
     @media (max-width: 575px) {
       margin-left: -108px;
     }
@@ -39,6 +42,7 @@
   .swiper-button-prev {
     position: absolute;
     bottom: 0;
+    left: -111px;
     @media (max-width: 575px) {
       left: -65px;
       svg {
@@ -80,16 +84,15 @@
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    @media (max-width: 767px) {
+      max-width: 420px;
+    }
     @media (max-width: 575px) {
       max-width: 390px;
     }
     img {
-      max-width: 140px;
       width: 100%;
       height: 100%;
-      @media (max-width: 575px) {
-        max-width: 100px;
-      }
     }
   }
   &__line {
