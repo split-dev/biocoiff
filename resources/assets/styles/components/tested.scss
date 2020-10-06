@@ -85,6 +85,9 @@
       font-size: 48px;
       line-height: 80px;
     }
+    @media (max-width: 575px) {
+      max-width: 305px;
+    }
   }
   p {
     color: #4a3c3a;

@@ -46,6 +46,16 @@
       justify-content: flex-end;
       position: relative;
       z-index: 9;
+      @media (max-width: 375px) {
+        max-width: 245px;
+        position: relative;
+        right: -55px;
+      }
+      img {
+        @media (max-width: 375px) {
+          width: 100%;
+        }
+      }
       &:before {
         content: "";
         width: 162px;
@@ -65,11 +75,13 @@
     display: flex;
   }
   &__right {
-    margin-right: 120px;
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
     position: relative;
     z-index: 9;
     @media (max-width: 1320px) {
-      margin-right: 0;
+      margin-left: 0;
     }
     @media (max-width: 1199px) {
       position: absolute;

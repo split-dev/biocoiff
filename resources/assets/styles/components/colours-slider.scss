@@ -16,6 +16,10 @@
     @media (max-width: 575px) {
       margin-left: -108px;
     }
+    @media (max-width: 361px) {
+      margin-top: 83px;
+      margin-left: -70px;
+    }
     &:before {
       content: "";
       width: 222px;
@@ -119,7 +123,7 @@
     }
   }
   &__text {
-    margin-left: 160px;
+    margin-left: 220px;
     width: 100%;
     max-width: 315px;
     margin-top: 90px;
@@ -135,9 +139,10 @@
       }
     }
     @media (max-width: 767px) {
-      margin-left: 15px;
+      margin-left: 0;
     }
     h1 {
+      width: 100%;
       margin-bottom: 30px;
       position: relative;
       z-index: 9;

@@ -19,6 +19,7 @@ export default {
       keyboard: true,
     });
     $('.phone').mask('0 000 000 000');
+    $('.mail').mask('0 000 000 000');
 
     var vid = document.getElementById('videoBox');
 
