@@ -159,6 +159,9 @@
     }
   }
 }
+.item-body {
+  overflow-x: visible !important;
+}
 .contact-before {
   position: relative;
   &:before {
