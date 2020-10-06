@@ -195,6 +195,10 @@
     top: 25px;
     background: #f3f9fa;
     z-index: -12;
+    @media (max-width: 575px) {
+      left: 12px;
+      top: 12px;
+    }
   }
 }
 .bg-cover {
