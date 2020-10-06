@@ -31,6 +31,8 @@ export default {
       vid.pause();
     }
 
+
+
     $(document).ready(function () {
       $('.video-box__button').click(function (e) {
         $(this).removeClass('video-btn-none');
