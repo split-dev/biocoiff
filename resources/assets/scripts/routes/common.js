@@ -31,6 +31,9 @@ export default {
       vid.pause();
     }
 
+    $('#slideThree').on('click', function () {
+      $('.slideThree').toggleClass('slideThree__checked');
+    });
 
 
     $(document).ready(function () {
