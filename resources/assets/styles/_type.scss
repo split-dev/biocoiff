@@ -6,9 +6,6 @@
  * such as `.text-hero`, which can be `@extend`-ed from other scss files
  * This way, this file become a master list of typography used throughout the site
  */
-body {
-  overflow-x: hidden;
-}
 .row {
   width: 100%;
 }

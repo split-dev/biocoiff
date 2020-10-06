@@ -1,6 +1,7 @@
 .like-block {
   padding-top: 120px;
   padding-bottom: 60px;
+  overflow: hidden;
   @media (max-width: 991px) {
     padding-top: 80px;
   }
