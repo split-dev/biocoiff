@@ -284,6 +284,7 @@
       }
     }
     .card-detail__small-img {
+      width: 100%;
       position: relative;
       transition: 0.4s;
       display: flex;
@@ -314,7 +315,7 @@
         border: 1px solid #4a3c3a;
         border-radius: 50%;
         transition: 0.4s;
-        top: -87px;
+        top: -62px;
         right: 60px;
         position: absolute;
         z-index: 9;
