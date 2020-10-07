@@ -44,6 +44,10 @@
     display: flex;
     justify-content: flex-end;
     z-index: 9;
+    margin-right: -100px;
+    @media (max-width: 1199px) {
+      margin-right: 0;
+    }
     @media (max-width: 1050px) {
       padding-right: 15px;
     }

@@ -13,6 +13,10 @@
     max-width: 273px;
     height: 153px;
     position: relative;
+    @media (max-width: 1050px) {
+      max-width: 223px;
+      height: 126px;
+    }
     @media (max-width: 767px) {
       max-width: 150px;
       height: 77px;
