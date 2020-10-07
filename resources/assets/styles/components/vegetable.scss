@@ -57,7 +57,9 @@
         margin-left: 30px;
       }
       @media (max-width: 420px) {
-        margin-left: 0;
+        margin-left: -30px;
+        max-width: 240px;
+        height: 135px;
       }
     }
   }
