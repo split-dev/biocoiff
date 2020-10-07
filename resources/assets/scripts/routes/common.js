@@ -18,8 +18,7 @@ export default {
       mousewheel: true,
       keyboard: true,
     });
-    $('.phone').mask('0-000-000-000');
-
+    $('.phone').mask('0 000 000 000');
     var vid = document.getElementById('videoBox');
 
     function playVid() {
