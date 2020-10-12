@@ -51,9 +51,16 @@
     @media (max-width: 991px) {
       display: none;
     }
-    img:last-child {
+    .big-put {
+      width: 384px;
+      height: 240px;
+    }
+    .big-put:last-child {
+      background-position: left;
       position: relative;
-      right: -105px;
+      right: -66px;
+      width: 489px;
+      height: 584px;
     }
   }
   &__bg {

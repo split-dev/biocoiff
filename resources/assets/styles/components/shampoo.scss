@@ -5,7 +5,7 @@
   justify-content: space-between;
   overflow: hidden;
   @media (max-width: 991px) {
-    padding-bottom: 140px;
+    padding-bottom: 0;
     padding-top: 0;
   }
   h2 {
@@ -20,12 +20,13 @@
       font-weight: 400;
       line-height: 80px;
     }
-    img {
+    .big-put {
       @media (max-width: 575px) {
-        margin-right: -230px;
+        right: -90px;
       }
     }
     h2 {
+      margin-top: 30px;
       color: #a5a1a1;
       font-size: 64px !important;
       font-weight: 400;
@@ -46,7 +47,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     position: relative;
-    z-index: 12;
+    z-index: 1;
     @media (max-width: 991px) {
       display: none;
     }
@@ -109,6 +110,15 @@
       left: -152px;
     }
   }
+  &__bg {
+    width: 489px;
+    height: 264px;
+    z-index: 1;
+    @media (max-width: 1119px) {
+      width: 384px;
+      height: 254px;
+    }
+  }
   &__center {
     z-index: 12;
     position: relative;
@@ -119,6 +129,7 @@
       display: none;
     }
     h2 {
+      z-index: 99;
       color: #4a3c3a;
       font-size: 64px;
       font-weight: 400;

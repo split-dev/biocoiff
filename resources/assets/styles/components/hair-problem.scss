@@ -1,8 +1,10 @@
 .hair-problem {
+  padding-top: 35px;
   padding-bottom: 120px;
   overflow: hidden;
   @media (max-width: 991px) {
     padding-bottom: 0;
+    padding-top: 140px;
   }
   &__text {
     max-width: 434px;
