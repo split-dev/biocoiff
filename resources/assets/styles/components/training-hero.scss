@@ -80,19 +80,22 @@
     }
   }
   &__right {
-    margin-top: 420px;
+    margin-top: 410px;
     max-width: 355px;
     margin-left: 70px;
     @media (max-width: 1400px) {
-      margin-left: 20px;
+      margin-left: 35px;
       margin-right: 20px;
     }
     @media (max-width: 1200px) {
-      margin-top: 320px;
+      margin-top: 305px;
       margin-left: 50px;
     }
     @media (max-width: 1040px) {
       margin-top: 300px;
+    }
+    @media (max-width: 1018px) {
+      margin-top: 285px;
     }
     @media (max-width: 991px) {
       margin: 80px auto 0 auto;
