@@ -20,6 +20,46 @@
       "title": "Training Page",
       "description": "pending",
       "url": "/training.html"
+    },
+    {
+      "title": "Colours Page",
+      "description": "pending",
+      "url": "/colours.html"
+    },
+    {
+      "title": "FAQ Page",
+      "description": "pending",
+      "url": "/faq.html"
+    },
+    {
+      "title": "Item Page",
+      "description": "pending",
+      "url": "/item.html"
+    },
+    {
+      "title": "Login Page",
+      "description": "pending",
+      "url": "/login.html"
+    },
+    {
+      "title": "Products Page",
+      "description": "pending",
+      "url": "/products.html"
+    },
+    {
+      "title": "Register Page",
+      "description": "pending",
+      "url": "/register.html"
+    },
+    {
+      "title": "Shop-main Page",
+      "description": "pending",
+      "url": "/shop-main.html"
+    },
+    {
+      "title": "Why choose us Page",
+      "description": "pending",
+      "url": "/why-choose-us.html"
     }
   ]
 }
