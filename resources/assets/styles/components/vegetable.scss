@@ -3,7 +3,7 @@
   padding-bottom: 100px;
   overflow: hidden;
   @media (max-width: 767px) {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   &__content {
     display: flex;
@@ -42,24 +42,28 @@
     @media (max-width: 991px) {
       margin-top: 70px;
     }
-    h2 {
-      margin-left: -160px;
-      @media (max-width: 991px) {
-        display: none;
-      }
-    }
-    img {
-      width: 100%;
+    .big-put {
       max-width: 344px;
+      height: 204px;
       margin-top: 80px;
       margin-left: 60px;
       @media (max-width: 1199px) {
         margin-left: 30px;
       }
+      @media (max-width: 575px) {
+        height: 165px;
+        margin-left: -34px;
+      }
       @media (max-width: 420px) {
         margin-left: -30px;
         max-width: 240px;
         height: 135px;
+      }
+    }
+    h2 {
+      margin-left: -160px;
+      @media (max-width: 991px) {
+        display: none;
       }
     }
   }

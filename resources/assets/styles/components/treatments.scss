@@ -6,6 +6,12 @@
   @media (max-width: 575px) {
     padding-bottom: 65px;
   }
+  .row {
+    @media (max-width: 991px) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
   .mission {
     padding: 0;
     position: relative;

@@ -233,6 +233,11 @@
       display: none !important;
     }
   }
+  .main-video__text {
+    @media (max-width: 991px) {
+      max-width: 372px !important;
+    }
+  }
   h2 {
     margin-bottom: 50px !important;
     max-width: 100% !important;

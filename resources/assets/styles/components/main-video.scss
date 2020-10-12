@@ -2,6 +2,7 @@
   display: flex;
   padding: 200px 0 100px 0;
   overflow: hidden;
+  position: relative;
   @media (max-width: 991px) {
     padding-top: 130px;
     flex-direction: column;
