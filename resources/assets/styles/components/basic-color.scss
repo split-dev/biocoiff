@@ -11,7 +11,7 @@
   &__img {
     display: flex;
     margin-left: -88px;
-    max-height: 420px;
+    height: 420px;
     max-width: 520px;
     width: 100%;
     margin-top: 50px;
@@ -19,6 +19,7 @@
     @media (max-width: 575px) {
       margin-left: -33px;
       max-width: 360px;
+      height: 207px;
     }
     img {
       width: 100%;
