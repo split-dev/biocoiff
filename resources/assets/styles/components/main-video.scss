@@ -48,6 +48,7 @@
     }
   }
   .video-box__button {
+    pointer-events: auto !important;
     background-image: url("images/choose/play.svg");
     background-repeat: no-repeat;
     background-size: cover;

@@ -201,6 +201,17 @@
     }
   }
 }
+.video-box__button {
+  pointer-events: none;
+}
+.video-btn-none {
+  background-image: none !important;
+}
+video {
+  &:hover {
+    cursor: pointer;
+  }
+}
 .bg-cover {
   background-size: cover;
   background-position: center;

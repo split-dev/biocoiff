@@ -23,10 +23,10 @@ export default {
     function playVid() {
       vid.play();
     }
-
-    function pauseVid() {
-      vid.pause();
-    }
+    $('.videoBox').click(function () {
+      $('.video-box__button').addClass('video-btn-none');
+      $(this).trigger('play');
+    });
 
     $('#slideThree').on('click', function () {
       $('.slideThree').toggleClass('slideThree__checked');
@@ -36,17 +36,10 @@ export default {
       $(this).toggleClass('li-active')
     })
     $(document).ready(function () {
-      $('.video-box__button').click(function (e) {
-        $(this).removeClass('video-btn-none');
-        e.preventDefault;
-        if ($(this).hasClass('pause')) {
-          pauseVid();
-          $(this).toggleClass('pause');
-        } else {
-          $(this).addClass('video-btn-none');
-          playVid();
-          $(this).toggleClass('pause');
-        }
+      $('.video-box__button').click(function () {
+        $(this).addClass('video-btn-none');
+        playVid();
+        $(this).toggleClass('pause');
       });
     });
 
