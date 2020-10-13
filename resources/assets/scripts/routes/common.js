@@ -23,9 +23,25 @@ export default {
     function playVid() {
       vid.play();
     }
-    $('.videoBox').click(function () {
-      $('.video-box__button').addClass('video-btn-none');
-      $(this).trigger('play');
+    function pauseVid() {
+      vid.pause();
+    }
+
+
+
+    $('.videoBox').click(function (e) {
+      e.preventDefault;
+      $(this).prev().removeClass('video-btn-none');
+      if ($(this).hasClass('pause')) {
+        $(this).trigger('pause');
+        $(this).toggleClass('pause');
+      } else {
+        $(this).prev().addClass('video-btn-none');
+        $(this).trigger('play');
+        $(this).toggleClass('pause');
+      }
+      /*$('.video-box__button').addClass('video-btn-none');
+      $(this).trigger('play');*/
     });
 
     $('#slideThree').on('click', function () {
@@ -36,10 +52,20 @@ export default {
       $(this).toggleClass('li-active')
     })
     $(document).ready(function () {
-      $('.video-box__button').click(function () {
-        $(this).addClass('video-btn-none');
+      $('.video-box__button').click(function (e) {
+        $(this).removeClass('video-btn-none');
+        e.preventDefault;
+        if ($(this).hasClass('pause')) {
+          pauseVid();
+          $(this).toggleClass('pause');
+        } else {
+          $(this).addClass('video-btn-none');
+          playVid();
+          $(this).toggleClass('pause');
+        }
+        /*$(this).addClass('video-btn-none');
         playVid();
-        $(this).toggleClass('pause');
+        $(this).toggleClass('pause');*/
       });
     });
 
