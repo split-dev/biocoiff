@@ -1,0 +1,12 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .main-video__video {
+    @media (max-width: 991px) {
+      max-height: 550px;
+    }
+  }
+  .shampoo__center {
+    h2 {
+      left: -45px;
+    }
+  }
+}
