@@ -328,6 +328,7 @@
         }
       }
       &:before {
+        filter: blur(8px);
         content: "";
         width: 120px;
         height: 120px;
