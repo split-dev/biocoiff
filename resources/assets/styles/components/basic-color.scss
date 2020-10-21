@@ -53,6 +53,7 @@
       padding-right: 15px;
     }
     &:after {
+      filter: blur(8px);
       content: "";
       width: 216px;
       height: 216px;

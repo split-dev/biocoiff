@@ -99,6 +99,7 @@
         padding: 50px 15px 0 15px;
       }
       &:before {
+        filter: blur(8px);
         width: 192px;
         height: 192px;
         content: "";

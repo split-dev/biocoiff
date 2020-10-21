@@ -8,6 +8,7 @@
     padding-top: 120px;
   }
   &:before {
+    filter: blur(8px);
     content: "";
     width: 333px;
     height: 333px;
@@ -64,6 +65,7 @@
       padding-top: 40px;
     }
     &:after {
+      filter: blur(8px);
       content: "";
       width: 333px;
       height: 333px;

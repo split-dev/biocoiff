@@ -83,6 +83,7 @@
         }
       }
       &:before {
+        filter: blur(8px);
         content: "";
         width: 162px;
         height: 162px;
@@ -119,6 +120,7 @@
       display: none;
     }
     &:before {
+      filter: blur(8px);
       content: "";
       width: 216px;
       height: 216px;
@@ -135,6 +137,7 @@
       width: 344px;
       height: 204px;
       &:before {
+        filter: blur(8px);
         content: "";
         position: absolute;
         width: 100%;

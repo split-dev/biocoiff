@@ -24,6 +24,7 @@
       margin-left: -70px;
     }
     &:before {
+      filter: blur(8px);
       content: "";
       width: 222px;
       height: 222px;
@@ -149,6 +150,7 @@
       position: relative;
       z-index: 9;
       &:before {
+        filter: blur(8px);
         content: "";
         width: 222px;
         height: 222px;
