@@ -3,6 +3,7 @@
   z-index: 9;
   overflow: hidden;
   &:before {
+    filter: blur(8px);
     content: "";
     width: 216px;
     height: 216px;
@@ -22,6 +23,7 @@
     align-items: center;
     justify-content: center;
     &:before {
+      filter: blur(8px);
       content: "";
       width: 216px;
       height: 216px;

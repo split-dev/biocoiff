@@ -37,6 +37,7 @@
     position: relative;
     z-index: 9;
     &:after {
+      filter: blur(8px);
       content: "";
       width: 216px;
       height: 216px;
@@ -57,6 +58,7 @@
     position: relative;
     z-index: 9;
     &:before {
+      filter: blur(8px);
       content: "";
       width: 444px;
       height: 444px;
@@ -167,7 +169,7 @@
       border-radius: 50%;
       transition: 0.3s;
     }
-    input[type=checkbox] {
+    input[type="checkbox"] {
       visibility: hidden;
       &:checked + label {
         left: 3px;

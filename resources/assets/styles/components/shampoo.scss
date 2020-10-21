@@ -52,6 +52,7 @@
       display: none;
     }
     &:after {
+      filter: blur(8px);
       content: "";
       width: 432px;
       height: 432px;
@@ -86,6 +87,7 @@
       display: none;
     }
     &:after {
+      filter: blur(8px);
       content: "";
       width: 331px;
       height: 331px;

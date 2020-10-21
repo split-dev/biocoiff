@@ -136,6 +136,7 @@
       margin-bottom: 100px;
     }
     &:after {
+      filter: blur(8px);
       content: "";
       width: 216px;
       height: 216px;
@@ -153,6 +154,7 @@
     }
     h2 {
       &:before {
+        filter: blur(8px);
         content: "";
         width: 216px;
         height: 216px;

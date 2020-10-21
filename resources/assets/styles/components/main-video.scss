@@ -125,6 +125,7 @@
       border-radius: 50%;
       box-shadow: 2px 4px 51px 21px #fcf1eb;
       position: absolute;
+      filter: blur(8px);
       z-index: -12;
       left: -159px;
       top: -119px;
@@ -146,6 +147,7 @@
     position: relative;
     z-index: 9;
     &:after {
+      filter: blur(8px);
       content: "";
       width: 331px;
       height: 331px;
