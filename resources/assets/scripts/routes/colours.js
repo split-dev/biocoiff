@@ -13,21 +13,6 @@ export default {
           prevEl: '.swiper-button-prev',
         },
       });
-      // let slide = false;
-      // $('.swiper-button-next').click(function () {
-      //   if (slide) {
-      //    mySwiper.slideTo(0);
-      //   } else {
-      //     mySwiper.slideNext();
-      //   }
-      // });
-      // $('.swiper-button-prev').click(function () {
-      //   if (slide) {
-      //     mySwiper.slideTo(0);
-      //   } else {
-      //     mySwiper.slidePrev();
-      //   }
-      // });
     }
   },
 
