@@ -4,6 +4,7 @@ export default {
   init() {
     //eslint-disable-next-line no-unused-vars
     if ($('.colours-slider').hasClass('colours-slider')) {
+      //eslint-disable-next-line no-unused-vars
       var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         initialSlide: 0,
@@ -12,21 +13,21 @@ export default {
           prevEl: '.swiper-button-prev',
         },
       });
-      let slide = false;
-      $('.swiper-button-next').click(function () {
-        if (slide) {
-          mySwiper.slideTo(0);
-        } else {
-          mySwiper.slideNext();
-        }
-      });
-      $('.swiper-button-prev').click(function () {
-        if (slide) {
-          mySwiper.slideTo(0);
-        } else {
-          mySwiper.slidePrev();
-        }
-      });
+      // let slide = false;
+      // $('.swiper-button-next').click(function () {
+      //   if (slide) {
+      //    mySwiper.slideTo(0);
+      //   } else {
+      //     mySwiper.slideNext();
+      //   }
+      // });
+      // $('.swiper-button-prev').click(function () {
+      //   if (slide) {
+      //     mySwiper.slideTo(0);
+      //   } else {
+      //     mySwiper.slidePrev();
+      //   }
+      // });
     }
   },
 

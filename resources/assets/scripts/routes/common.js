@@ -11,13 +11,15 @@ export default {
       once: true,
     });
     //eslint-disable-next-line no-unused-vars
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      cssMode: true,
-      loop: false,
-      mousewheel: true,
-      keyboard: true,
-    });
+    if ($('.card-detail__info').hasClass('card-detail__info')) {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        cssMode: true,
+        loop: false,
+        mousewheel: true,
+        keyboard: true,
+      })
+    }
     $('.phone').mask('0 000 000 000');
     var vid = document.getElementById('videoBox');
     function playVid() {
